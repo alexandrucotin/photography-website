@@ -1,25 +1,21 @@
 {
-    "name": "adopt-me",
-    "version": "1.0.0",
-    "description": "An app to teach you to write React",
-    "main": "src/App.js",
-    "scripts": {
+  "name": "MySite",
+  "version": "1.0.0",
+  "description": "My site built with react",
+  "main": "src/App.js",
+  "scripts": {
     "test": "",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "parcel src/index.html"
-    },
-    "repository": {
+  },
+  "repository": {
     "type": "git",
-    "url": "git+https://github.com/btholt/complete-intro-to-react-v4.git"
-    },
-    "author": "Brian Holt <btholt@gmail.com>",
-    "license": "Apache-2.0",
-    "bugs": {
-    "url": "https://github.com/btholt/complete-intro-to-react-v4/issues"
-    },
-    "homepage": "https://github.com/btholt/complete-intro-to-react-v4#readme",
-    "devDependencies": {
+    "url": "git+https://github.com/alexandrucotin/mySite"
+  },
+  "author": "Alex Cotin",
+  "homepage": "https://github.com/alexandrucotin/mySite#readme",
+  "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -32,11 +28,13 @@
     "eslint-plugin-react": "^7.10.0",
     "parcel-bundler": "^1.11.0",
     "prettier": "^1.14.2"
-    },
-    "dependencies": {
+  },
+  "dependencies": {
     "@reach/router": "^1.2.1",
     "petfinder-client": "^1.0.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
-    }
-    }
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-bulma-components": "^2.3.0",
+    "react-dom": "^16.8.6"
+  }
+}
