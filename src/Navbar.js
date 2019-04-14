@@ -1,80 +1,56 @@
 import React from "react";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
 
-class Navbar extends React.Component {
-  render() {
-    return (
-      <nav className="navbar" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
-          <a className="navbar-item" href="https://bulma.io">
-            <img
-              src="https://bulma.io/images/bulma-logo.png"
-              width="112"
-              height="28"
-              alt="brandName"
-            />
-          </a>
-
-          <a
-            role="button"
-            className="navbar-burger burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-            href="./index.html"
-          >
-            <span aria-hidden="true" />
-            <span aria-hidden="true" />
-            <span aria-hidden="true" />
-          </a>
-        </div>
-
-        <div id="navbarBasicExample" className="navbar-menu">
-          <div className="navbar-start">
-            <a className="navbar-item" href="https://bulma.io">
-              Home
-            </a>
-
-            <a className="navbar-item" href="https://bulma.io">
-              Documentation
-            </a>
-
-            <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link" href="https://bulma.io">
-                More
-              </a>
-
-              <div className="navbar-dropdown">
-                <a className="navbar-item" href="https://bulma.io">
-                  About
-                </a>
-                <a className="navbar-item" href="https://bulma.io">
-                  Jobs
-                </a>
-                <a className="navbar-item" href="https://bulma.io">
-                  Contact
-                </a>
-                <hr className="navbar-divider" />
-                <a className="navbar-item" href="https://bulma.io">
-                  Report an issue
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="buttons">
-                <button className="button is-primary">
-                  <strong>Sign up</strong>
-                </button>
-                <button className="button is-light">Log in</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    );
+const styles = {
+  root: {
+    flexGrow: 1
+  },
+  grow: {
+    flexGrow: 1
+  },
+  appBar: {
+    top: "auto",
+    bottom: 0,
+    height: 100
+  },
+  menuButton: {
+    marginLeft: -12,
+    marginRight: 20
   }
+};
+
+function ButtonAppBar(props) {
+  const { classes } = props;
+  return (
+    <div className={classes.root}>
+      <AppBar position="fixed" className={classes.appBar}>
+        <Toolbar>
+          <Typography variant="h6" color="inherit" className={classes.grow}>
+            Start
+          </Typography>
+          <Typography variant="h6" color="inherit" className={classes.grow}>
+            Me
+          </Typography>
+          <Typography variant="h6" color="inherit" className={classes.grow}>
+            Portfolio
+          </Typography>
+          <Typography variant="h6" color="inherit" className={classes.grow}>
+            Blog
+          </Typography>
+          <Button color="inherit">Login</Button>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
 }
 
-export default Navbar;
+ButtonAppBar.propTypes = {
+  classes: PropTypes.object.isRequired
+};
+
+export default withStyles(styles)(ButtonAppBar);
