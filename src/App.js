@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Navbar from "./NavbarCustom";
+import Header from "./Header";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <div>
-          <h1> CIAOOOO</h1>
+        <Header />
+        <div className="body-section">
+          <p> CIAOOOO</p>
         </div>
       </div>
     );
