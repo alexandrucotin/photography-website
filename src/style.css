@@ -1,6 +1,7 @@
-.loading-dots {
-  text-align: center;
-  z-index: 5;
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
 
 .dot {
@@ -70,4 +71,29 @@
   100% {
     opacity: 0;
   }
+}
+
+@media only screen and (max-width: 1280px) {
+  .dot {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .material-icons {
+    display: none;
+  }
+}
+
+.full-screen {
+  /* The image used */
+  background-image: url(./static/P1050632.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

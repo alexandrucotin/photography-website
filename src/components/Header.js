@@ -6,7 +6,6 @@ class Header extends React.Component {
     return (
       <div>
         <Navbar />
-        <h1 className="title">Title</h1>
       </div>
     );
   }

@@ -7,9 +7,6 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <div className="body-section">
-          <p> CIAOOOO</p>
-        </div>
       </div>
     );
   }

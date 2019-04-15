@@ -31,21 +31,19 @@ function ButtonAppBar(props) {
     <div className={classes.root}>
       <AppBar
         position="fixed"
-        color="default"
         className={classes.appBar}
         align="center"
         style={{
-          display: "flex",
           alignItems: "center",
-          justifyContent: "center"
+          justifyContent: "center",
+          background: "white",
+          opacity: 0.3
         }}
       >
         <Grid
           container
           spacing={0}
           style={{
-            display: "flex",
-            alignItems: "center",
             justifyContent: "center"
           }}
         >

@@ -9,8 +9,13 @@ class NavbarItem extends React.Component {
   }
   render() {
     return (
-      <Grid item xs={3}>
-        <Typography variant="h6" color="inherit">
+      <Grid item xs={12} sm={6} lg={3}>
+        <Typography
+          variant="h5"
+          style={{
+            marginBottom: 20
+          }}
+        >
           {this.props.name}
         </Typography>
       </Grid>
