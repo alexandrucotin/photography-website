@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
@@ -36,8 +35,8 @@ function ButtonAppBar(props) {
         style={{
           alignItems: "center",
           justifyContent: "center",
-          background: "white",
-          opacity: 0.3
+          background: "black",
+          opacity: 0.8
         }}
       >
         <Grid

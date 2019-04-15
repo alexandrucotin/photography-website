@@ -4,6 +4,10 @@ html {
   margin: 0;
 }
 
+.title {
+  font-family: "Shadows Into Light", cursive;
+}
+
 .dot {
   display: inline;
   margin-left: 0.2em;
@@ -87,7 +91,7 @@ html {
 
 .full-screen {
   /* The image used */
-  background-image: url(./static/P1050632.jpg);
+  background-image: url(./static/P1060065.jpg);
 
   /* Full height */
   height: 100%;

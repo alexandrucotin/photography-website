@@ -12,7 +12,15 @@ class NavbarIcon extends React.Component {
     return (
       <Grid item xs={1}>
         <Typography>
-          <Icon fontSize="large">{this.props.icon}</Icon>
+          <Icon
+            fontSize="large"
+            style={{
+              marginBottom: 20,
+              color: "white"
+            }}
+          >
+            {this.props.icon}
+          </Icon>
         </Typography>
       </Grid>
     );

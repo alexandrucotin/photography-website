@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
@@ -13,7 +12,8 @@ class NavbarItem extends React.Component {
         <Typography
           variant="h5"
           style={{
-            marginBottom: 20
+            marginBottom: 20,
+            color: "white"
           }}
         >
           {this.props.name}
