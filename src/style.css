@@ -4,10 +4,6 @@ html {
   margin: 0;
 }
 
-.title {
-  font-family: "Shadows Into Light", cursive;
-}
-
 .dot {
   display: inline;
   margin-left: 1.2em;

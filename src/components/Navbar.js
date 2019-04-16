@@ -20,55 +20,51 @@ const styles = {
   appBar: {
     top: "auto",
     bottom: 0,
-    height: 150
-  },
-  shadow: {
-    shadows: 1
+    height: 150,
+    boxShadow: "10px -9px 5px 0px  rgba(241, 90, 34, .1)"
   }
 };
 
-function ButtonAppBar(props) {
+function BottonAppBar(props) {
   const { classes } = props;
   return (
-    <div className={classes.root}>
-      <AppBar
-        position="fixed"
-        className={classes.appBar}
-        align="center"
+    <AppBar
+      position="fixed"
+      className={classes.appBar}
+      align="center"
+      style={{
+        alignItems: "center",
+        justifyContent: "center",
+        background: "black",
+        opacity: 0.8,
+        shadows: -2 - 15
+      }}
+    >
+      <Grid
+        container
+        spacing={0}
         style={{
-          alignItems: "center",
-          justifyContent: "center",
-          background: "black",
-          opacity: 0.8,
-          shadows: -2 - 15
+          justifyContent: "center"
         }}
       >
-        <Grid
-          container
-          spacing={0}
-          style={{
-            justifyContent: "center"
-          }}
-        >
-          <NavbarItem name={"Home"} />
-          <NavbarItem name={"Me"} />
-          <NavbarItem name={"Portfolio"} />
-          <NavbarItem name={"Blog"} />
-          <NavbarIcon icon={"home"} />
-          <Dots />
-          <NavbarIcon icon={"face"} />
-          <Dots2 />
-          <NavbarIcon icon={"photo_camera"} />
-          <Dots3 />
-          <NavbarIcon icon={"format_align_justify"} />
-        </Grid>
-      </AppBar>
-    </div>
+        <NavbarItem name={"Home"} />
+        <NavbarItem name={"Me"} />
+        <NavbarItem name={"Portfolio"} />
+        <NavbarItem name={"Blog"} />
+        <NavbarIcon icon={"home"} />
+        <Dots />
+        <NavbarIcon icon={"face"} />
+        <Dots2 />
+        <NavbarIcon icon={"photo_camera"} />
+        <Dots3 />
+        <NavbarIcon icon={"format_align_justify"} />
+      </Grid>
+    </AppBar>
   );
 }
 
-ButtonAppBar.propTypes = {
+BottonAppBar.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(ButtonAppBar);
+export default withStyles(styles)(BottonAppBar);

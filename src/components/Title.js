@@ -1,16 +1,36 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Typography from "@material-ui/core/Typography";
+import { withStyles } from "@material-ui/core/styles";
 
-class Title extends React.Component {
-  constructor(props) {
-    super(props);
+const styles = {
+  root: {
+    width: "100%",
+    maxWidth: "100%"
+  },
+  title: {
+    color: "white"
   }
-  render() {
-    return (
-      <Typography component="h2" variant="h2" align="center" className="title">
-        ALEX COTIN | PHOTOGRAPHER
-      </Typography>
-    );
-  }
+};
+
+function Title(props) {
+  const { classes } = props;
+
+  return (
+    <Typography
+      component="h2"
+      variant="h1"
+      align="right"
+      className={classes.title}
+      style={{ alignItems: "center", justifyContent: "center" }}
+    >
+      Alexandru Cotin
+    </Typography>
+  );
 }
-export default Title;
+
+Title.propTypes = {
+  classes: PropTypes.object.isRequired
+};
+
+export default withStyles(styles)(Title);
