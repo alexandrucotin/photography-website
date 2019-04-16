@@ -6,7 +6,6 @@ import AppBar from "@material-ui/core/AppBar";
 import Dots from "./Dots";
 import Dots2 from "./Dots2";
 import Dots3 from "./Dots3";
-import NavbarItem from "./NavbarItems";
 import NavbarIcon from "./NavbarIcons";
 
 const styles = {
@@ -47,10 +46,6 @@ function BottonAppBar(props) {
           justifyContent: "center"
         }}
       >
-        <NavbarItem name={"Home"} />
-        <NavbarItem name={"Me"} />
-        <NavbarItem name={"Portfolio"} />
-        <NavbarItem name={"Blog"} />
         <NavbarIcon icon={"home"} />
         <Dots />
         <NavbarIcon icon={"face"} />
