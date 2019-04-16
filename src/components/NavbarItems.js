@@ -7,15 +7,20 @@ class NavbarItem extends React.Component {
     super(props);
   }
 
+  routeChange() {
+    let path = `newPath`;
+    this.props.history.push(path);
+  }
   render() {
     return (
       <Grid item xs={12} sm={6} lg={3}>
         <Button
-          variant="contained"
+          variant="outlined"
           style={{
             marginBottom: 20,
-            opacity: 0.6
+            color: "white"
           }}
+          onClick={this.routeChange}
         >
           {this.props.name}
         </Button>
