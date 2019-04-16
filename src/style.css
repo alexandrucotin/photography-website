@@ -6,9 +6,9 @@ html {
 
 .dot {
   display: inline;
-  margin-left: 1.2em;
-  margin-right: 1.2em;
-  font-size: 1.5em;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  font-size: 2em;
   opacity: 0;
   animation: showHideDot 2.5s ease-in-out infinite;
 }
@@ -78,12 +78,6 @@ html {
   }
 }
 
-@media only screen and (max-width: 1280px) {
-  .material-icons {
-    display: none;
-  }
-}
-
 .full-screen {
   /* The image used */
   background-image: url(./static/P1050390.jpg);
@@ -95,4 +89,35 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Bounce In */
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover,
+.hvr-bounce-in:focus,
+.hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* TRANSITION */
+
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
 }
