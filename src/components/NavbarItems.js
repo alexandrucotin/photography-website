@@ -1,23 +1,24 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import { Typography } from "@material-ui/core";
+import Button from "@material-ui/core/Button";
 
 class NavbarItem extends React.Component {
   constructor(props) {
     super(props);
   }
+
   render() {
     return (
       <Grid item xs={12} sm={6} lg={3}>
-        <Typography
-          variant="h5"
+        <Button
+          variant="contained"
           style={{
             marginBottom: 20,
-            color: "white"
+            opacity: 0.6
           }}
         >
           {this.props.name}
-        </Typography>
+        </Button>
       </Grid>
     );
   }

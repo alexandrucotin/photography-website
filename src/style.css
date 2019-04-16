@@ -10,10 +10,9 @@ html {
 
 .dot {
   display: inline;
-  margin-left: 0.2em;
-  margin-right: 0.2em;
-  top: -1em;
-  font-size: 3.5em;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+  font-size: 1.5em;
   opacity: 0;
   animation: showHideDot 2.5s ease-in-out infinite;
 }
@@ -91,7 +90,7 @@ html {
 
 .full-screen {
   /* The image used */
-  background-image: url(./static/P1060065.jpg);
+  background-image: url(./static/P1050390.jpg);
 
   /* Full height */
   height: 100%;

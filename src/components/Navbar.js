@@ -21,6 +21,9 @@ const styles = {
     top: "auto",
     bottom: 0,
     height: 150
+  },
+  shadow: {
+    shadows: 1
   }
 };
 
@@ -36,7 +39,8 @@ function ButtonAppBar(props) {
           alignItems: "center",
           justifyContent: "center",
           background: "black",
-          opacity: 0.8
+          opacity: 0.8,
+          shadows: -2 - 15
         }}
       >
         <Grid

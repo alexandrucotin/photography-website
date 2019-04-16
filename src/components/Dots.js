@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 
 function Dots() {
   return (
-    <Grid item xs={2}>
+    <Grid item xs={2} sm={2} lg={2}>
       <div className="loading-dots">
         <p className="dot one">.</p>
         <p className="dot two">.</p>

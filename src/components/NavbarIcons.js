@@ -10,7 +10,7 @@ class NavbarIcon extends React.Component {
   }
   render() {
     return (
-      <Grid item xs={1}>
+      <Grid item xs={1} sm={1} lg={1}>
         <Typography>
           <Icon
             fontSize="large"
