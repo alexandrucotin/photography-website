@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Grid from "@material-ui/core/Grid";
 
-class Me extends React.Component {
+class Portfolio extends React.Component {
   render() {
     return (
       <Grid container direction="column">
@@ -10,13 +10,11 @@ class Me extends React.Component {
           <Navbar />
         </Grid>
         <Grid item xs={12} sm={12} lg={12} xl={12}>
-          <h1 style={{ color: "white", align: "right" }}>
-            This is an ABOUT ME page
-          </h1>
+          <h1 style={{ color: "white", align: "right" }}>This my Portfolio!</h1>
         </Grid>
       </Grid>
     );
   }
 }
 
-export default Me;
+export default Portfolio;
