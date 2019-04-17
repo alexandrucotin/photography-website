@@ -29,7 +29,7 @@ function GridPort(props) {
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={180} className={classes.gridList}>
+      <GridList cellHeight={"800"}>
         <GridListTile key="Subheader" cols={2} style={{ height: "auto" }}>
           <ListSubheader component="div">December</ListSubheader>
         </GridListTile>

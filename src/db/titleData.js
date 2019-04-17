@@ -5,17 +5,17 @@ import image3 from "../static/P1060065.jpg";
 const tileData = [
   {
     img: image,
-    title: "Rami",
+    title: "Tramonto",
     author: "Alex"
   },
   {
     img: image2,
-    title: "Image",
+    title: "Ponte Pietra",
     author: "Alex"
   },
   {
     img: image3,
-    title: "Castelvecchio?",
+    title: "Night Roads",
     author: "Alex"
   }
 ];
