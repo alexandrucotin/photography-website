@@ -7,6 +7,7 @@ import Dots from "./Dots";
 import Dots2 from "./Dots2";
 import Dots3 from "./Dots3";
 import NavbarIcon from "./NavbarIcons";
+import { Link } from "@reach/router";
 
 const styles = {
   root: {
@@ -46,13 +47,21 @@ function BottomAppBar(props) {
           justifyContent: "center"
         }}
       >
-        <NavbarIcon icon={"home"} />
+        <Link to="/">
+          <NavbarIcon icon={"home"} />
+        </Link>
         <Dots />
-        <NavbarIcon icon={"face"} />
+        <Link to="/Me">
+          <NavbarIcon icon={"face"} />
+        </Link>
         <Dots2 />
-        <NavbarIcon icon={"photo_camera"} />
+        <Link to="/Portfolio">
+          <NavbarIcon icon={"photo_camera"} />
+        </Link>
         <Dots3 />
-        <NavbarIcon icon={"format_align_justify"} />
+        <Link to="/Blog">
+          <NavbarIcon icon={"format_align_justify"} />
+        </Link>
       </Grid>
     </AppBar>
   );

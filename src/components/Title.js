@@ -22,7 +22,6 @@ function Title(props) {
       variant="h1"
       align="right"
       className={classes.title}
-      style={{ alignItems: "center", justifyContent: "center" }}
     >
       Alexandru Cotin
     </Typography>
