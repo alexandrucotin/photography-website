@@ -8,29 +8,33 @@ class NavbarIcon extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
+    /*this.state = {
       isActive: false
-    };
+    };*/
   }
-
+  /*
   handleActive(e) {
     this.setState({
       isActive: !this.state.isActive
-    });
-  }
+    }); 
+  }*/
   render() {
-    const { isActive } = this.state;
+    /* const { isActive } = this.state; */
     return (
       <Grid item xs={12} sm={6} lg={1} xl={1}>
-        <IconButton aria-label="Icon">
+        <IconButton
+          aria-label="Icon"
+
+          /* onClick={e => this.handleActive(e)}
+          className={`"hvr-bounce-in" ${isActive ? "pulse" : ""}`} */
+        >
           <Icon
             fontSize="large"
             style={{
               marginBottom: 20,
               color: "white"
             }}
-            onClick={e => this.handleActive(e)}
-            className={`"hvr-bounce-in" ${isActive ? "pulse" : ""}`}
+            className="hvr-bounce-in"
           >
             {this.props.icon}
           </Icon>

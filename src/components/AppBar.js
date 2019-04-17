@@ -47,19 +47,19 @@ function BottomAppBar(props) {
           justifyContent: "center"
         }}
       >
-        <Link to="/">
+        <Link to="/" style={{ textDecoration: "none" }}>
           <NavbarIcon icon={"home"} />
         </Link>
         <Dots />
-        <Link to="/Me">
+        <Link to="/Me" style={{ textDecoration: "none" }}>
           <NavbarIcon icon={"face"} />
         </Link>
         <Dots2 />
-        <Link to="/Portfolio">
+        <Link to="/Portfolio" style={{ textDecoration: "none" }}>
           <NavbarIcon icon={"photo_camera"} />
         </Link>
         <Dots3 />
-        <Link to="/Blog">
+        <Link to="/Blog" style={{ textDecoration: "none" }}>
           <NavbarIcon icon={"format_align_justify"} />
         </Link>
       </Grid>
