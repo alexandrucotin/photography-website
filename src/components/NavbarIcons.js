@@ -7,8 +7,19 @@ import IconButton from "@material-ui/core/IconButton";
 class NavbarIcon extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      isActive: false
+    };
+  }
+
+  handleActive(e) {
+    this.setState({
+      isActive: !this.state.isActive
+    });
   }
   render() {
+    const { isActive } = this.state;
     return (
       <Grid item xs={12} sm={6} lg={1} xl={1}>
         <IconButton aria-label="Icon">
@@ -18,7 +29,8 @@ class NavbarIcon extends React.Component {
               marginBottom: 20,
               color: "white"
             }}
-            className="hvr-bounce-in"
+            onClick={e => this.handleActive(e)}
+            className={`"hvr-bounce-in" ${isActive ? "pulse" : ""}`}
           >
             {this.props.icon}
           </Icon>

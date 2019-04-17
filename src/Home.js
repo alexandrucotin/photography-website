@@ -4,6 +4,9 @@ import Title from "./components/Title";
 import Grid from "@material-ui/core/Grid";
 
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <Grid container direction="column">

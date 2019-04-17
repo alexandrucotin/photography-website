@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar";
 import Grid from "@material-ui/core/Grid";
 
 class Portfolio extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <Grid container direction="column">

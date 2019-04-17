@@ -3,6 +3,11 @@ import Navbar from "./components/Navbar";
 import Grid from "@material-ui/core/Grid";
 
 class Blog extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  handleState;
   render() {
     return (
       <Grid container direction="column">
