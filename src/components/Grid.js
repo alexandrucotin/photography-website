@@ -16,10 +16,6 @@ const styles = {
     justifyContent: "space-around",
     overflow: "hidden"
   },
-  gridList: {
-    width: 500,
-    height: 450
-  },
   icon: {
     color: "rgba(255, 255, 255, 0.54)"
   }
@@ -29,7 +25,7 @@ function GridPort(props) {
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={"800"}>
+      <GridList cellHeight={"700"}>
         <GridListTile key="Subheader" cols={2} style={{ height: "auto" }}>
           <ListSubheader component="div">December</ListSubheader>
         </GridListTile>
