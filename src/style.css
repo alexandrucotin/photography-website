@@ -202,5 +202,56 @@ html {
 
 .fade-appear.fade-appear-active {
   opacity: 1;
-  transition: opacity 800ms linear;
+  transition: opacity 1000ms linear;
+}
+
+/* ANOTHER TRANSITION */
+
+.loadComponent-appear {
+  opacity: 0;
+}
+.loadComponent-appear.loadComponent-appear-active {
+  opacity: 1;
+  transition: all 0.6s linear;
+}
+.loadComponent-enter {
+  opacity: 0;
+}
+.loadComponent-enter.loadComponent-enter-active {
+  opacity: 1;
+  transition: all 0.6s linear 0.4s;
+}
+.loadComponent-leave {
+  opacity: 1;
+  position: absolute;
+}
+.loadComponent-leave.loadComponent-leave-active {
+  opacity: 0;
+  transition: all 0.6s linear;
+  position: absolute;
+}
+
+.leaveComponent-appear {
+  opacity: 0;
+}
+
+.leaveComponent-appear.leaveComponent-appear-active {
+  opacity: 1;
+  transition: all 0.6s linear;
+}
+.leaveComponent-enter {
+  opacity: 0;
+}
+.leaveComponent-enter.leaveComponent-enter-active {
+  opacity: 1;
+  transition: all 0.2s linear 0.4s;
+}
+.leaveComponent-leave {
+  opacity: 1;
+  position: absolute;
+}
+.leaveComponent-leave.leaveComponent-leave-active {
+  opacity: 0;
+  transition: all 0.2s linear;
+  position: absolute;
 }
