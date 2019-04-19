@@ -78,9 +78,51 @@ html {
   }
 }
 
-.full-screen {
+.home {
   /* The image used */
   background-image: url(./static/P1060065.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.me {
+  /* The image used */
+  background-image: url(./static/P1050632.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.portfolio {
+  /* The image used */
+  background-image: url(./static/P1050390.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.blog {
+  /* The image used */
+  background-image: url(./static/P1050390.jpg);
 
   /* Full height */
   height: 100%;
@@ -95,7 +137,6 @@ html {
 /* PULSE EFFECT */
 
 .pulse {
-  display: block;
   width: 22px;
   height: 22px;
   border-radius: 50%;

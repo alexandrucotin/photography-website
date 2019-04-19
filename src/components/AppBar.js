@@ -7,7 +7,7 @@ import Dots from "./Dots";
 import Dots2 from "./Dots2";
 import Dots3 from "./Dots3";
 import NavbarIcon from "./NavbarIcons";
-import { Link } from "@reach/router";
+import { NavLink } from "react-router-dom";
 
 const styles = {
   root: {
@@ -47,21 +47,37 @@ function BottomAppBar(props) {
           justifyContent: "center"
         }}
       >
-        <Link to="/" style={{ textDecoration: "none" }}>
+        <NavLink
+          to="/"
+          style={{ textDecoration: "none" }}
+          activeClassName="pulse"
+        >
           <NavbarIcon icon={"home"} />
-        </Link>
+        </NavLink>
         <Dots />
-        <Link to="/Me" style={{ textDecoration: "none" }}>
+        <NavLink
+          to="/Me"
+          style={{ textDecoration: "none" }}
+          activeClassName="pulse"
+        >
           <NavbarIcon icon={"face"} />
-        </Link>
+        </NavLink>
         <Dots2 />
-        <Link to="/Portfolio" style={{ textDecoration: "none" }}>
+        <NavLink
+          to="/Portfolio"
+          style={{ textDecoration: "none" }}
+          activeClassName="pulse"
+        >
           <NavbarIcon icon={"photo_camera"} />
-        </Link>
+        </NavLink>
         <Dots3 />
-        <Link to="/Blog" style={{ textDecoration: "none" }}>
+        <NavLink
+          to="/Blog"
+          style={{ textDecoration: "none" }}
+          activeClassName="pulse"
+        >
           <NavbarIcon icon={"format_align_justify"} />
-        </Link>
+        </NavLink>
       </Grid>
     </AppBar>
   );

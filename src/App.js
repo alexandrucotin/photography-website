@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Home from "./Home";
-import { Router } from "@reach/router";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Me from "./Me";
 import Portfolio from "./Portfolio";
 import Blog from "./Blog";
+import Home from "./Home";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import * as firebase from "firebase";
 
@@ -38,10 +38,10 @@ class App extends React.Component {
           classNames="fade"
         >
           <Router>
-            <Home path="/" />
-            <Me path="/Me" />
-            <Portfolio path="/Portfolio" />
-            <Blog path="/Blog" />
+            <Route exact path="/" component={Home} />
+            <Route path="/me" component={Me} />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/blog" component={Blog} />
           </Router>
         </CSSTransition>
       </TransitionGroup>
