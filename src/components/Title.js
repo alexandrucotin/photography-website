@@ -17,12 +17,7 @@ function Title(props) {
   const { classes } = props;
 
   return (
-    <Typography
-      component="h2"
-      variant="h1"
-      align="right"
-      className={classes.title}
-    >
+    <Typography component="h2" variant="h1" className={classes.title}>
       Alexandru Cotin
     </Typography>
   );

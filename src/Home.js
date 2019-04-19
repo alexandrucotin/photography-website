@@ -9,16 +9,16 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <Grid container direction="column">
-        <Grid item xs={12} sm={12} lg={12} xl={12}>
-          <Navbar />
-        </Grid>
-        <Grid item xs={12} sm={12} lg={12} xl={12}>
-          <main>
+      <div className="full-screen">
+        <Grid container direction="column" justify="center" alignItems="center">
+          <Grid item xs={12} sm={12} lg={12} xl={12}>
+            <Navbar />
+          </Grid>
+          <Grid item xs={12} sm={12} lg={12} xl={12}>
             <Title />
-          </main>
+          </Grid>
         </Grid>
-      </Grid>
+      </div>
     );
   }
 }
