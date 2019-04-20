@@ -83,7 +83,7 @@ html {
   background-image: url(./static/P1060065.jpg);
 
   /* Full height */
-  height: 100%;
+  height: 100vh;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -254,4 +254,11 @@ html {
   opacity: 0;
   transition: all 0.2s linear;
   position: absolute;
+}
+
+/* Full Height & Width */
+
+.full {
+  width: 100%;
+  height: 100%;
 }

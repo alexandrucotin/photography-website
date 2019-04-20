@@ -18,7 +18,7 @@ function Title(props) {
 
   return (
     <Typography component="h2" variant="h1" className={classes.title}>
-      Alexandru Cotin
+      ALEXANDRU COTIN
     </Typography>
   );
 }

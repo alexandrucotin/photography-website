@@ -41,14 +41,15 @@ class Home extends React.Component {
           <div className="home">
             <Grid
               container
-              direction="column"
+              direction="row"
               justify="center"
               alignItems="center"
+              className="full"
             >
-              <Grid item xs={12} sm={12} lg={12} xl={12}>
+              <Grid item>
                 <BottomAppBar />
               </Grid>
-              <Grid item xs={12} sm={12} lg={12} xl={12}>
+              <Grid item>
                 <Title />
               </Grid>
             </Grid>
