@@ -25,6 +25,13 @@ const styles = {
   }
 };
 
+const checkActive = (match, location) => {
+  //some additional logic to verify you are in the home URI
+  if (!location) return false;
+  const { pathname } = location;
+  return pathname === "/";
+};
+
 function BottomAppBar(props) {
   const { classes } = props;
   return (
@@ -47,35 +54,19 @@ function BottomAppBar(props) {
           justifyContent: "center"
         }}
       >
-        <NavLink
-          to="/"
-          style={{ textDecoration: "none" }}
-          activeClassName="pulse"
-        >
+        <NavLink to="/" activeClassName="pulse" isActive={checkActive}>
           <NavbarIcon icon={"home"} />
         </NavLink>
         <Dots />
-        <NavLink
-          to="/Me"
-          style={{ textDecoration: "none" }}
-          activeClassName="pulse"
-        >
+        <NavLink to="/Me" activeClassName="pulse" isActive={checkActive}>
           <NavbarIcon icon={"face"} />
         </NavLink>
         <Dots2 />
-        <NavLink
-          to="/Portfolio"
-          style={{ textDecoration: "none" }}
-          activeClassName="pulse"
-        >
+        <NavLink to="/Portfolio" activeClassName="pulse" isActive={checkActive}>
           <NavbarIcon icon={"photo_camera"} />
         </NavLink>
         <Dots3 />
-        <NavLink
-          to="/Blog"
-          style={{ textDecoration: "none" }}
-          activeClassName="pulse"
-        >
+        <NavLink to="/Blog" activeClassName="pulse" isActive={checkActive}>
           <NavbarIcon icon={"format_align_justify"} />
         </NavLink>
       </Grid>

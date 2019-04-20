@@ -81,11 +81,8 @@ html {
 .home {
   /* The image used */
   background-image: url(./static/P1060065.jpg);
-
-  /* Full height */
-  height: 100vh;
-
   /* Center and scale the image nicely */
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,11 +92,8 @@ html {
 .me {
   /* The image used */
   background-image: url(./static/P1050632.jpg);
-
-  /* Full height */
-  height: 100%;
-
   /* Center and scale the image nicely */
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,11 +103,8 @@ html {
 .portfolio {
   /* The image used */
   background-image: url(./static/P1050390.jpg);
-
-  /* Full height */
-  height: 100%;
-
   /* Center and scale the image nicely */
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,11 +114,8 @@ html {
 .blog {
   /* The image used */
   background-image: url(./static/P1050390.jpg);
-
-  /* Full height */
-  height: 100%;
-
   /* Center and scale the image nicely */
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
