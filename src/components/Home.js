@@ -1,7 +1,6 @@
 import React from "react";
 import BottomAppBar from "./AppBar";
 import Title from "./Title";
-import Grid from "@material-ui/core/Grid";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 class Home extends React.Component {
@@ -39,20 +38,8 @@ class Home extends React.Component {
       >
         {this.state.isVisible ? (
           <div className="home">
-            <Grid
-              container
-              direction="row"
-              justify="center"
-              alignItems="center"
-              className="full"
-            >
-              <Grid item>
-                <BottomAppBar />
-              </Grid>
-              <Grid item>
-                <Title />
-              </Grid>
-            </Grid>
+            <Title />
+            <BottomAppBar />
           </div>
         ) : null}
       </ReactCSSTransitionGroup>

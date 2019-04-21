@@ -4,8 +4,6 @@ import { withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import AppBar from "@material-ui/core/AppBar";
 import Dots from "./Dots";
-import Dots2 from "./Dots2";
-import Dots3 from "./Dots3";
 import NavbarIcon from "./NavbarIcons";
 import { NavLink } from "react-router-dom";
 
@@ -20,16 +18,9 @@ const styles = {
   appBar: {
     top: "auto",
     bottom: 0,
-    height: 150,
+    height: "10rem",
     boxShadow: "10px -9px 5px 0px  rgba(241, 90, 34, .1)"
   }
-};
-
-const checkActive = (match, location) => {
-  //some additional logic to verify you are in the home URI
-  if (!location) return false;
-  const { pathname } = location;
-  return pathname === "/";
 };
 
 function BottomAppBar(props) {
@@ -49,26 +40,52 @@ function BottomAppBar(props) {
     >
       <Grid
         container
-        spacing={0}
+        direction="row"
         style={{
           justifyContent: "center"
         }}
       >
-        <NavLink to="/" activeClassName="pulse" isActive={checkActive}>
-          <NavbarIcon icon={"home"} />
-        </NavLink>
-        <Dots />
-        <NavLink to="/Me" activeClassName="pulse" isActive={checkActive}>
-          <NavbarIcon icon={"face"} />
-        </NavLink>
-        <Dots2 />
-        <NavLink to="/Portfolio" activeClassName="pulse" isActive={checkActive}>
-          <NavbarIcon icon={"photo_camera"} />
-        </NavLink>
-        <Dots3 />
-        <NavLink to="/Blog" activeClassName="pulse" isActive={checkActive}>
-          <NavbarIcon icon={"format_align_justify"} />
-        </NavLink>
+        <Grid item xs={6} xl={1}>
+          <NavLink to="/" style={{ textDecoration: "none" }}>
+            <NavbarIcon icon={"home"} />
+          </NavLink>
+        </Grid>
+        <Dots
+          dotNum={"one"}
+          dotNum2={"two"}
+          dotNum3={"three"}
+          dotNum4={"four"}
+          dotNum5={"five"}
+        />
+        <Grid item xs={6} xl={1}>
+          <NavLink to="/Me" style={{ textDecoration: "none" }}>
+            <NavbarIcon icon={"face"} />
+          </NavLink>
+        </Grid>
+        <Dots
+          dotNum={"six"}
+          dotNum2={"seven"}
+          dotNum3={"eight"}
+          dotNum4={"nine"}
+          dotNum5={"ten"}
+        />
+        <Grid item xs={6} xl={1}>
+          <NavLink to="/Portfolio" style={{ textDecoration: "none" }}>
+            <NavbarIcon icon={"photo_camera"} />
+          </NavLink>
+        </Grid>
+        <Dots
+          dotNum={"eleven"}
+          dotNum2={"twelve"}
+          dotNum3={"thirteen"}
+          dotNum4={"fourteen"}
+          dotNum5={"fiveteen"}
+        />
+        <Grid item xs={6} xl={1}>
+          <NavLink to="/Blog" style={{ textDecoration: "none" }}>
+            <NavbarIcon icon={"format_align_justify"} />
+          </NavLink>
+        </Grid>
       </Grid>
     </AppBar>
   );

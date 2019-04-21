@@ -1,18 +1,21 @@
 /* eslint-disable no-undef */
 import React from "react";
-import Grid from "@material-ui/core/Grid";
 
-function Dots() {
-  return (
-    <Grid item xs={2} sm={2} lg={2}>
+class Dots extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
       <div className="loading-dots">
-        <p className="dot one">.</p>
-        <p className="dot two">.</p>
-        <p className="dot three">.</p>
-        <p className="dot four">.</p>
-        <p className="dot five">.</p>
+        <p className={`dot ${this.props.dotNum}`}> . </p>
+        <p className={`dot ${this.props.dotNum2}`}>.</p>
+        <p className={`dot ${this.props.dotNum3}`}>.</p>
+        <p className={`dot ${this.props.dotNum4}`}>.</p>
+        <p className={`dot ${this.props.dotNum5}`}>.</p>
       </div>
-    </Grid>
-  );
+    );
+  }
 }
 export default Dots;
