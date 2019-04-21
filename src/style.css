@@ -9,7 +9,7 @@ html {
 /* BACKGROUND IMAGE HOME */
 .home {
   /* The image used */
-  background-image: url(./static/P1060065.jpg);
+  background-image: url(./static/P1060526-1.jpg);
   /* Center and scale the image nicely */
   height: 100%;
   background-position: center;
@@ -105,12 +105,6 @@ html {
   }
   100% {
     opacity: 0;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  .dot {
-    display: none;
   }
 }
 
@@ -223,3 +217,11 @@ html {
   width: 100%;
   height: 100%;
 }
+
+@media only screen and (max-width: 1280px) {
+  .dot {
+    display: none;
+  }
+}
+
+/* TITLE ANIMATION */

@@ -20,7 +20,7 @@ const styles = {
     top: "auto",
     bottom: 0,
     height: "10rem",
-    boxShadow: "10px -9px 5px 0px  rgba(241, 90, 34, .1)"
+    boxShadow: "10px -9px 5px 0px  rgba(0, 0, 0, .1)"
   }
 };
 
@@ -35,8 +35,7 @@ function BottomAppBar(props) {
         alignItems: "center",
         justifyContent: "center",
         background: "black",
-        opacity: 0.8,
-        shadows: -2 - 15
+        opacity: 0.8
       }}
     >
       <Grid container direction="row" alignContent="center">

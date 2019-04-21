@@ -13,7 +13,6 @@ class NavbarIcon extends React.Component {
         <Icon
           fontSize="large"
           style={{
-            marginBottom: 20,
             color: "white"
           }}
           className="hvr-bounce-in"
