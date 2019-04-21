@@ -4,6 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import AppBar from "@material-ui/core/AppBar";
 import Dots from "./Dots";
+import BEDots from "./BEDots";
 import NavbarIcon from "./NavbarIcons";
 import { NavLink } from "react-router-dom";
 
@@ -38,53 +39,59 @@ function BottomAppBar(props) {
         shadows: -2 - 15
       }}
     >
-      <Grid
-        container
-        direction="row"
-        style={{
-          justifyContent: "center"
-        }}
-      >
-        <Grid item xs={6} xl={1}>
+      <Grid container direction="row" alignContent="center">
+        <Grid item lg={1} xl={1}>
+          <BEDots dotNum={"one"} dotNum2={"two"} />
+        </Grid>
+        <Grid item xs={6} sm={6} lg={1} xl={1}>
           <NavLink to="/" style={{ textDecoration: "none" }}>
             <NavbarIcon icon={"home"} />
           </NavLink>
         </Grid>
-        <Dots
-          dotNum={"one"}
-          dotNum2={"two"}
-          dotNum3={"three"}
-          dotNum4={"four"}
-          dotNum5={"five"}
-        />
-        <Grid item xs={6} xl={1}>
+        <Grid item lg={2} xl={2}>
+          <Dots
+            dotNum={"three"}
+            dotNum2={"four"}
+            dotNum3={"five"}
+            dotNum4={"six"}
+            dotNum5={"seven"}
+          />
+        </Grid>
+        <Grid item xs={6} sm={6} lg={1} xl={1}>
           <NavLink to="/Me" style={{ textDecoration: "none" }}>
             <NavbarIcon icon={"face"} />
           </NavLink>
         </Grid>
-        <Dots
-          dotNum={"six"}
-          dotNum2={"seven"}
-          dotNum3={"eight"}
-          dotNum4={"nine"}
-          dotNum5={"ten"}
-        />
-        <Grid item xs={6} xl={1}>
+        <Grid item lg={2} xl={2}>
+          <Dots
+            dotNum={"eight"}
+            dotNum2={"nine"}
+            dotNum3={"ten"}
+            dotNum4={"eleven"}
+            dotNum5={"twelve"}
+          />
+        </Grid>
+        <Grid item xs={6} sm={6} lg={1} xl={1}>
           <NavLink to="/Portfolio" style={{ textDecoration: "none" }}>
             <NavbarIcon icon={"photo_camera"} />
           </NavLink>
         </Grid>
-        <Dots
-          dotNum={"eleven"}
-          dotNum2={"twelve"}
-          dotNum3={"thirteen"}
-          dotNum4={"fourteen"}
-          dotNum5={"fiveteen"}
-        />
-        <Grid item xs={6} xl={1}>
+        <Grid item lg={2} xl={2}>
+          <Dots
+            dotNum={"thirteen"}
+            dotNum2={"fourteen"}
+            dotNum3={"fiveteen"}
+            dotNum4={"sixteen"}
+            dotNum5={"seventeen"}
+          />
+        </Grid>
+        <Grid item xs={6} sm={6} lg={1} xl={1}>
           <NavLink to="/Blog" style={{ textDecoration: "none" }}>
             <NavbarIcon icon={"format_align_justify"} />
           </NavLink>
+        </Grid>
+        <Grid itemlg={1} xl={1}>
+          <BEDots dotNum={"eighteen"} dotNum2={"nineteen"} />
         </Grid>
       </Grid>
     </AppBar>

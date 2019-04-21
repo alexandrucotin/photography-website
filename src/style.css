@@ -81,6 +81,18 @@ html {
 .fiveteen {
   animation-delay: 3s;
 }
+.sixteen {
+  animation-delay: 3.2s;
+}
+.seventeen {
+  animation-delay: 3.4s;
+}
+.eighteen {
+  animation-delay: 3.6s;
+}
+.nineteen {
+  animation-delay: 3.8s;
+}
 @keyframes showHideDot {
   0% {
     opacity: 0;

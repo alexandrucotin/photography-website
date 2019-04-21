@@ -9,7 +9,7 @@ class Dots extends React.Component {
   render() {
     return (
       <div className="loading-dots">
-        <p className={`dot ${this.props.dotNum}`}> . </p>
+        <p className={`dot ${this.props.dotNum}`}>.</p>
         <p className={`dot ${this.props.dotNum2}`}>.</p>
         <p className={`dot ${this.props.dotNum3}`}>.</p>
         <p className={`dot ${this.props.dotNum4}`}>.</p>
