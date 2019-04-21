@@ -1,10 +1,12 @@
+import app from "firebase/app";
+
 var config = {
-  apiKey: "AIzaSyAuV5-48NTyoy1rQsgMLasyewqkzxXCFhI",
-  authDomain: "mysite-454d0.firebaseapp.com",
-  databaseURL: "https://mysite-454d0.firebaseio.com",
-  projectId: "mysite-454d0",
-  storageBucket: "mysite-454d0.appspot.com",
-  messagingSenderId: "1019197266630"
+  apiKey: process.env.FIREBASE_KEY,
+  authDomain: process.env.FIREBASE_DOMAIN,
+  databaseURL: process.env.FIREBASE_URL,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_SENDER_ID
 };
 
 class Firebase {
@@ -12,4 +14,5 @@ class Firebase {
     app.initializeApp(config);
   }
 }
+
 export default Firebase;
