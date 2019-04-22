@@ -1,51 +1,61 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 import IconButton from "@material-ui/core/IconButton";
 import InfoIcon from "@material-ui/icons/Info";
-import tileData from "../db/titleData";
+import firebase from "../db/Firebase";
 
-const styles = {
-  root: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden"
-  },
-  icon: {
-    color: "rgba(255, 255, 255, 0.54)"
+class GridPort extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      images: []
+    };
   }
-};
-function GridPort(props) {
-  const { classes } = props;
 
-  return (
-    <div className={classes.root}>
-      <GridList cellHeight={700}>
-        {tileData.map(tile => (
-          <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
-            <GridListTileBar
-              title={tile.title}
-              subtitle={<span>by: {tile.author}</span>}
-              actionIcon={
-                <IconButton className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
-              }
-            />
-          </GridListTile>
-        ))}
-      </GridList>
-    </div>
-  );
+  componentDidMount() {
+    const imgRef = firebase.database().ref("imgs");
+    imgRef.on("value", snapshot => {
+      let imgs = snapshot.val();
+      let newState = [];
+      for (let img in imgs) {
+        newState.push({
+          id: imgs[img].id,
+          url: imgs[img].url,
+          category: imgs[img].category,
+          description: imgs[img].description
+        });
+      }
+      this.setState({
+        images: newState
+      });
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <GridList cellHeight={700}>
+          {this.state.images.map(img => (
+            <GridListTile key={img.id}>
+              <img src={img.url} alt={img.description} />
+              <GridListTileBar
+                title={img}
+                subtitle={<span>by: Alex Cotin</span>}
+                actionIcon={
+                  <IconButton>
+                    <InfoIcon />
+                  </IconButton>
+                }
+              />
+            </GridListTile>
+          ))}
+        </GridList>
+      </div>
+    );
+  }
 }
 
-GridPort.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
-export default withStyles(styles)(GridPort);
+export default GridPort;

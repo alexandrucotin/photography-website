@@ -4,25 +4,13 @@ import Grid from "@material-ui/core/Grid";
 import GridPort from "./Grid";
 import SearchBar from "./SearchBar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
-import firebase from "firebase";
-
-var config = {
-  apiKey: process.env.FIREBASE_KEY,
-  authDomain: process.env.FIREBASE_DOMAIN,
-  databaseURL: process.env.FIREBASE_URL,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_SENDER_ID
-};
 
 class Portfolio extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      isVisible: true,
-      category: "",
-      images: []
+      isVisible: true
     };
 
     this.closeComponent = ev => {
