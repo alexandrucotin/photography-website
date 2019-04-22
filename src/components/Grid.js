@@ -25,7 +25,8 @@ class GridPort extends React.Component {
           id: imgs[img].id,
           url: imgs[img].url,
           category: imgs[img].category,
-          description: imgs[img].description
+          description: imgs[img].description,
+          title: imgs[img].title
         });
       }
       this.setState({
@@ -37,16 +38,16 @@ class GridPort extends React.Component {
   render() {
     return (
       <div>
-        <GridList cellHeight={700}>
+        <GridList cellHeight={500}>
           {this.state.images.map(img => (
             <GridListTile key={img.id}>
               <img src={img.url} alt={img.description} />
               <GridListTileBar
-                title={img}
+                title={img.title}
                 subtitle={<span>by: Alex Cotin</span>}
                 actionIcon={
                   <IconButton>
-                    <InfoIcon />
+                    <InfoIcon style={{ color: "white" }} />
                   </IconButton>
                 }
               />

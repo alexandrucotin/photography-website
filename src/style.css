@@ -225,3 +225,7 @@ html {
 }
 
 /* TITLE ANIMATION */
+
+.grid-responsive {
+  height: 100%;
+}
