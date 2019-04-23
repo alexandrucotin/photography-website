@@ -41,22 +41,12 @@ class Portfolio extends React.Component {
       >
         {this.state.isVisible ? (
           <div className="portfolio">
-            <Grid container>
-              <Grid item xs={12} sm={12} lg={12} xl={12}>
-                <BottomAppBar />
-              </Grid>
-              <Grid item xs={12} sm={12} lg={12} xl={12}>
-                <h1 style={{ color: "white", align: "right" }}>
-                  This my Portfolio!
-                </h1>
-              </Grid>
-              <Grid item xs={12} sm={12} lg={12} xl={12}>
-                <SearchBar />
-              </Grid>
-              <Grid item xs={12} sm={12} lg={12} xl={12}>
-                <GridPort />
-              </Grid>
-            </Grid>
+            <BottomAppBar />
+            <h1 style={{ color: "white", align: "right" }}>
+              This my Portfolio!
+            </h1>
+            <SearchBar />
+            <GridPort />
           </div>
         ) : null}
       </ReactCSSTransitionGroup>

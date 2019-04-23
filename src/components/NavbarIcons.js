@@ -11,9 +11,9 @@ class NavbarIcon extends React.Component {
     return (
       <IconButton aria-label="Icon">
         <Icon
-          fontSize="default"
           style={{
-            color: "white"
+            color: "white",
+            fontSize: "30px"
           }}
           className="hvr-bounce-in"
         >

@@ -35,7 +35,7 @@ function BottomAppBar(props) {
         alignItems: "center",
         justifyContent: "center",
         background: "black",
-        opacity: 0.8
+        opacity: 0.6
       }}
     >
       <Grid container direction="row" alignContent="center">

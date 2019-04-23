@@ -38,7 +38,7 @@ class GridPort extends React.Component {
   render() {
     return (
       <div>
-        <GridList cellHeight={500}>
+        <GridList cellHeight={400}>
           {this.state.images.map(img => (
             <GridListTile key={img.id}>
               <img src={img.url} alt={img.description} />
