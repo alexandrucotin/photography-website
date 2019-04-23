@@ -1,8 +1,6 @@
 import React from "react";
 import firebase from "../db/Firebase";
 import { Grid } from "@material-ui/core";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 
 class GridPort2 extends React.Component {
   constructor(props) {
