@@ -11,7 +11,7 @@ class NavbarIcon extends React.Component {
     return (
       <IconButton aria-label="Icon">
         <Icon
-          fontSize="large"
+          fontSize="default"
           style={{
             color: "white"
           }}
