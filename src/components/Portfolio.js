@@ -1,7 +1,6 @@
 import React from "react";
 import BottomAppBar from "./AppBar";
-import Grid from "@material-ui/core/Grid";
-import GridPort from "./Grid";
+import GridPort2 from "./Grid2";
 import SearchBar from "./SearchBar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
@@ -41,12 +40,10 @@ class Portfolio extends React.Component {
       >
         {this.state.isVisible ? (
           <div className="portfolio">
-            <BottomAppBar />
-            <h1 style={{ color: "white", align: "right" }}>
-              This my Portfolio!
-            </h1>
+            <h1 style={{ color: "white" }}>This my Portfolio!</h1>
             <SearchBar />
-            <GridPort />
+            <GridPort2 />
+            <BottomAppBar />
           </div>
         ) : null}
       </ReactCSSTransitionGroup>

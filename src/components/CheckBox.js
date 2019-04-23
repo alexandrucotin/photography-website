@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
@@ -18,7 +17,7 @@ class CheckboxCustom extends React.Component {
               value="checkedI"
             />
           }
-          label="Custom size"
+          label="Night"
         />
       </FormGroup>
     );

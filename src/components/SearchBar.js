@@ -7,7 +7,7 @@ function SearchBar() {
   return (
     <div>
       <AppBar position="static">
-        <Grid container direction="row">
+        <Grid container>
           <Grid item>
             <CheckBoxCustom />
           </Grid>

@@ -213,11 +213,6 @@ html {
 
 /* Full Height & Width */
 
-.full {
-  width: 100%;
-  height: 100%;
-}
-
 @media only screen and (max-width: 1280px) {
   .dot {
     display: none;
@@ -226,6 +221,12 @@ html {
 
 /* TITLE ANIMATION */
 
-.grid-responsive {
-  height: 100%;
+.responsive {
+  width: 100%;
+  height: auto;
+  max-width: 50rem;
+}
+
+.responsive-container {
+  padding: 0.5rem;
 }
