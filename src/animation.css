@@ -1,0 +1,158 @@
+/* ANIMATION DOTS NAVBAR */
+
+.dot {
+  display: inline;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  font-size: 2em;
+  opacity: 0;
+  animation: showHideDot 2.5s ease-in-out infinite;
+}
+.one {
+  animation-delay: 0.2s;
+}
+.two {
+  animation-delay: 0.4s;
+}
+.three {
+  animation-delay: 0.6s;
+}
+.four {
+  animation-delay: 0.8s;
+}
+.five {
+  animation-delay: 1s;
+}
+.six {
+  animation-delay: 1.2s;
+}
+.seven {
+  animation-delay: 1.4s;
+}
+.eight {
+  animation-delay: 1.6s;
+}
+.nine {
+  animation-delay: 1.8s;
+}
+.ten {
+  animation-delay: 2s;
+}
+.eleven {
+  animation-delay: 2.2s;
+}
+.twelve {
+  animation-delay: 2.4s;
+}
+.thirteen {
+  animation-delay: 2.6s;
+}
+.fourteen {
+  animation-delay: 2.8s;
+}
+.fiveteen {
+  animation-delay: 3s;
+}
+.sixteen {
+  animation-delay: 3.2s;
+}
+.seventeen {
+  animation-delay: 3.4s;
+}
+.eighteen {
+  animation-delay: 3.6s;
+}
+.nineteen {
+  animation-delay: 3.8s;
+}
+@keyframes showHideDot {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* END ANIMATION DOTS NAVBAR */
+
+/* ANIMATION BOUNCE IN NAVBAR */
+
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover,
+.hvr-bounce-in:focus,
+.hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* END ANIMATION BOUNCE IN NAVBAR */
+
+/* TRANSITION PAGES */
+
+.loadComponent-appear {
+  opacity: 0;
+}
+.loadComponent-appear.loadComponent-appear-active {
+  opacity: 1;
+  transition: all 0.6s linear;
+}
+.loadComponent-enter {
+  opacity: 0;
+}
+.loadComponent-enter.loadComponent-enter-active {
+  opacity: 1;
+  transition: all 0.6s linear 0.4s;
+}
+.loadComponent-leave {
+  opacity: 1;
+  position: absolute;
+}
+.loadComponent-leave.loadComponent-leave-active {
+  opacity: 0;
+  transition: all 0.6s linear;
+  position: absolute;
+}
+
+.leaveComponent-appear {
+  opacity: 0;
+}
+
+.leaveComponent-appear.leaveComponent-appear-active {
+  opacity: 1;
+  transition: all 0.6s linear;
+}
+.leaveComponent-enter {
+  opacity: 0;
+}
+.leaveComponent-enter.leaveComponent-enter-active {
+  opacity: 1;
+  transition: all 0.2s linear 0.4s;
+}
+.leaveComponent-leave {
+  opacity: 1;
+  position: absolute;
+}
+.leaveComponent-leave.leaveComponent-leave-active {
+  opacity: 0;
+  transition: all 0.2s linear;
+  position: absolute;
+}
+
+/* END TRANSITION ANIMATION PAGES*/
