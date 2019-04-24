@@ -2,7 +2,6 @@ import React from "react";
 import BottomAppBar from "./AppBar";
 import Title from "./Title";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
-import Box from "./Box";
 
 class Home extends React.Component {
   constructor(props) {
