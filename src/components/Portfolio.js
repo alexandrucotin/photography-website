@@ -40,8 +40,10 @@ class Portfolio extends React.Component {
       >
         {this.state.isVisible ? (
           <div className="portfolio">
-            <h1 style={{ color: "white" }}>This my Portfolio!</h1>
-            <SearchBar />
+            <div className="title-portfolio">
+              <h1 style={{ color: "white" }}>This my Portfolio!</h1>
+              <SearchBar />
+            </div>
             <GridPort2 />
             <BottomAppBar />
           </div>

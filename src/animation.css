@@ -174,8 +174,7 @@
   height: auto;
   top: 50vh;
   left: 4em;
-  animation: imgTransition 3s linear 1s 1 normal forwards,
-    shake 0.5s linear 4s 1 normal forwards;
+  animation: imgTransition 3s linear 1s forwards, shake 0.5s linear 4s;
 }
 
 @-webkit-keyframes imgTransition {

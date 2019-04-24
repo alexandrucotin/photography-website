@@ -59,6 +59,13 @@ html {
   max-width: 50em;
 }
 
+/* title portfolio */
+
+.title-portfolio {
+  width: 100%;
+  height: 100vh;
+}
+
 /* END STYLE PORTFOLIO PAGE */
 
 /* STYLE BLOG PAGE */
