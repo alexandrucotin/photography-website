@@ -93,4 +93,24 @@ html {
   background-attachment: fixed;
 }
 
+/* title blog */
+
+.div-title-blog {
+  display: flex;
+  width: auto;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.title-blog {
+  color: white;
+  text-transform: uppercase;
+  font-size: 6em;
+  font-family: "Lato";
+  font-weight: 100;
+}
+
 /* END STYLE BLOG PAGE */

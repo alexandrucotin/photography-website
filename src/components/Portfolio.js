@@ -3,6 +3,7 @@ import BottomAppBar from "./AppBar";
 import GridPort2 from "./Grid2";
 import SearchBar from "./SearchBar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import Icon from "@material-ui/core/Icon";
 
 class Portfolio extends React.Component {
   constructor(props) {
@@ -42,8 +43,15 @@ class Portfolio extends React.Component {
           <div className="portfolio">
             <div className="div-title-portfolio">
               <h1 className="title-portfolio">This my Portfolio!</h1>
+              <Icon
+                style={{
+                  color: "white",
+                  fontSize: "3em"
+                }}
+              >
+                keyboard_arrow_down
+              </Icon>
             </div>
-
             <SearchBar />
             <GridPort2 />
             <BottomAppBar />

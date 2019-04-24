@@ -1,7 +1,7 @@
 import React from "react";
 import BottomAppBar from "./AppBar";
-import Grid from "@material-ui/core/Grid";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import Icon from "@material-ui/core/Icon";
 
 class Blog extends React.Component {
   constructor(props) {
@@ -38,16 +38,18 @@ class Blog extends React.Component {
       >
         {this.state.isVisible ? (
           <div className="blog">
-            <Grid container>
-              <Grid item xs={12} sm={12} lg={12} xl={12}>
-                <BottomAppBar />
-              </Grid>
-              <Grid item xs={12} sm={12} lg={12} xl={12}>
-                <h1 style={{ color: "white", align: "right" }}>
-                  This my Blog!
-                </h1>
-              </Grid>
-            </Grid>
+            <div className="div-title-blog">
+              <h1 className="title-blog">This my Blog!</h1>
+              <Icon
+                style={{
+                  color: "white",
+                  fontSize: "3em"
+                }}
+              >
+                keyboard_arrow_down
+              </Icon>
+            </div>
+            <BottomAppBar />
           </div>
         ) : null}
       </ReactCSSTransitionGroup>
