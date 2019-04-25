@@ -34,6 +34,16 @@ html {
   font-weight: 100;
 }
 
+.social-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
 /* END STYLE HOME */
 
 /* STYLE ME PAGE */

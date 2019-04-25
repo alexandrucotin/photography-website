@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import React from "react";
 
 class BEDots extends React.Component {
