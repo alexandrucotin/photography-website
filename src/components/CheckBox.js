@@ -8,17 +8,15 @@ import CheckBoxIcon from "@material-ui/icons/CheckBox";
 class CheckboxCustom extends React.Component {
   render() {
     return (
-      <FormGroup style={{ color: "white" }}>
+      <FormGroup>
         <FormControlLabel
           control={
             <Checkbox
               icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
               checkedIcon={<CheckBoxIcon fontSize="small" />}
               value="checkedI"
-              style={{ color: "white" }}
             />
           }
-          style={{ color: "white" }}
           label="Night"
         />
       </FormGroup>

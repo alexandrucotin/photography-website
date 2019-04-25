@@ -38,16 +38,19 @@ class Me extends React.Component {
       >
         {this.state.isVisible ? (
           <div className="me">
-            <Grid container>
-              <Grid item xs={12} sm={12} lg={12} xl={12}>
-                <BottomAppBar />
+            <Grid container className="center-div">
+              <Grid item>
+                <h1 style={{ color: "white", align: "right" }}>
+                  This is an ABOUT ME page
+                </h1>
               </Grid>
-              <Grid item xs={12} sm={12} lg={12} xl={12}>
+              <Grid item>
                 <h1 style={{ color: "white", align: "right" }}>
                   This is an ABOUT ME page
                 </h1>
               </Grid>
             </Grid>
+            <BottomAppBar />
           </div>
         ) : null}
       </ReactCSSTransitionGroup>

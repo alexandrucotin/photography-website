@@ -166,34 +166,6 @@
 
 /* END TRANSITION ANIMATION PAGES*/
 
-/* HOMEPAGE BOX ANIMATION */
-
-.box {
-  position: absolute;
-  width: 50em;
-  height: auto;
-  top: 50vh;
-  left: 4em;
-  animation: imgTransition 3s linear 1s forwards, shake 0.5s linear 4s;
-}
-
-@-webkit-keyframes imgTransition {
-  from {
-    left: 4em;
-  }
-  to {
-    left: 60em;
-  }
-}
-
-@keyframes imgTransition {
-  from {
-    left: 4em;
-  }
-  to {
-    left: 60em;
-  }
-}
 /* END HOMEPAGE BOX ANIMATION */
 
 @keyframes shake {

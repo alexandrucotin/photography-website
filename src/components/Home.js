@@ -1,6 +1,6 @@
 import React from "react";
 import BottomAppBar from "./AppBar";
-import Title from "./Title";
+
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 class Home extends React.Component {
@@ -38,7 +38,9 @@ class Home extends React.Component {
       >
         {this.state.isVisible ? (
           <div className="home">
-            <Title />
+            <div className="div-title-home">
+              <h1 className="title-home">Alexandru Cotin</h1>
+            </div>
             <BottomAppBar />
           </div>
         ) : null}

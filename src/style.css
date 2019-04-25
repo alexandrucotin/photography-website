@@ -7,7 +7,7 @@ html {
 
 /* background image */
 .home {
-  background-image: url(./static/sfondo.png);
+  background-image: url(./static/P1050648-12.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,13 +15,21 @@ html {
   background-attachment: fixed;
 }
 
-.title {
-  color: #69779b;
-  font-family: "Dokdo", cursive;
+.div-title-home {
+  display: flex;
+  width: auto;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-home {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
   font-size: 4em;
-  text-align: center;
-  padding-top: 68vh;
-  padding-right: 100vh;
+  font-weight: 100;
 }
 
 /* END STYLE HOME */
@@ -38,6 +46,12 @@ html {
   background-attachment: fixed;
 }
 
+.center-div {
+  width: auto;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
 /* END STYLE ME PAGE */
 
 /* STYLE PORTFOLIO PAGE */
@@ -101,7 +115,6 @@ html {
   height: 100%;
   justify-content: center;
   align-items: center;
-
   flex-direction: column;
 }
 
