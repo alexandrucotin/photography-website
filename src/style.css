@@ -13,22 +13,24 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.div-title-home {
   display: flex;
   width: auto;
-  height: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.div-title-home {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
 }
 
 .title-home {
   color: white;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 100;
 }
 
@@ -127,3 +129,12 @@ html {
 }
 
 /* END STYLE BLOG PAGE */
+
+/* MEDIA QUERY */
+
+/* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */
+@media only screen and (max-width: 479px) {
+  #container2 {
+    width: 90%;
+  }
+}
