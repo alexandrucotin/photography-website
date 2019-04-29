@@ -1,6 +1,8 @@
 body,
 html {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -93,14 +95,46 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.divide {
+  padding: 1em 3em 1em 3em;
+}
+
+.div-title-me {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.responsive-me {
+  width: 100%;
+  height: auto;
+  max-width: 20em;
+  border-radius: 50%;
+}
+
+.title-me {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+}
+.text-me {
+  max-width: 40rem;
+  color: white;
+  line-height: 1.6;
 }
 
 .center-div {
-  width: auto;
-  height: 100%;
   justify-content: center;
-  align-items: center;
 }
+
 /* END STYLE ME PAGE */
 
 /* ------------------------------------------------------------------------------------- */

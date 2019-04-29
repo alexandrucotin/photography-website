@@ -6,6 +6,10 @@ import Home from "./Home";
 import { Route, Switch } from "react-router-dom";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div>

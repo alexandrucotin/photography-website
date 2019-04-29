@@ -11,7 +11,8 @@ class Home extends React.Component {
     super(props);
 
     this.state = {
-      isVisible: true
+      isVisible: true,
+      isLoding: true
     };
 
     this.closeComponent = ev => {
@@ -26,7 +27,17 @@ class Home extends React.Component {
       }, 600);
     };
   }
+
+  componentDidMount() {
+    this.setState({ isLoding: false });
+  }
   render() {
+    const { loading } = this.state.isLoding;
+
+    if (loading) {
+      // if your component doesn't have to wait for an async action, remove this block
+      return null; // render null when app is not ready
+    }
     return (
       <ReactCSSTransitionGroup
         transitionAppear={true}
