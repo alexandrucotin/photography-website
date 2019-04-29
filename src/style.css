@@ -3,6 +3,51 @@ html {
   margin: 0;
 }
 
+/* ------------------------------------------------------------------------------------- */
+
+/* SOCIALBAR STYLE */
+
+.social-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  color: white;
+}
+
+.icon-style {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.facebook-hover:hover {
+  color: #3b5998;
+  -webkit-transition: 0.5s; /* For Safari 3.0 to 6.0 */
+  transition: 0.5s; /* For modern browsers */
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.youtube-hover:hover {
+  color: #ff0000;
+  -webkit-transition: 0.5s; /* For Safari 3.0 to 6.0 */
+  transition: 0.5s; /* For modern browsers */
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.instagram-hover:hover {
+  color: #c13584;
+  -webkit-transition: 0.5s; /* For Safari 3.0 to 6.0 */
+  transition: 0.5s; /* For modern browsers */
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* END SOCIALBAR STYLE */
+
+/* ------------------------------------------------------------------------------------- */
+
 /* STYLE HOME PAGE */
 
 /* background image */
@@ -34,17 +79,9 @@ html {
   font-weight: 100;
 }
 
-.social-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-}
 /* END STYLE HOME */
+
+/* ------------------------------------------------------------------------------------- */
 
 /* STYLE ME PAGE */
 
@@ -65,6 +102,8 @@ html {
   align-items: center;
 }
 /* END STYLE ME PAGE */
+
+/* ------------------------------------------------------------------------------------- */
 
 /* STYLE PORTFOLIO PAGE */
 
@@ -107,6 +146,8 @@ html {
 
 /* END STYLE PORTFOLIO PAGE */
 
+/* ------------------------------------------------------------------------------------- */
+
 /* STYLE BLOG PAGE */
 
 /* background image */
@@ -140,11 +181,13 @@ html {
 
 /* END STYLE BLOG PAGE */
 
+/* ------------------------------------------------------------------------------------- */
+
 /* MEDIA QUERY */
 
 /* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */
 @media only screen and (max-width: 479px) {
-  #container2 {
-    width: 90%;
+  .title-home {
+    font-size: 2em;
   }
 }

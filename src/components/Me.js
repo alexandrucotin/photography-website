@@ -2,6 +2,7 @@ import React from "react";
 import BottomAppBar from "./AppBar";
 import Grid from "@material-ui/core/Grid";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import image from "../static/me.jpg";
 
 class Me extends React.Component {
   constructor(props) {
@@ -38,11 +39,9 @@ class Me extends React.Component {
       >
         {this.state.isVisible ? (
           <div className="me">
-            <Grid container className="center-div">
+            <Grid container className="center-div background">
               <Grid item>
-                <h1 style={{ color: "white", align: "right" }}>
-                  This is an ABOUT ME page
-                </h1>
+                <img src={image} alt="alex cotin" className="responsive" />
               </Grid>
               <Grid item>
                 <h1 style={{ color: "white", align: "right" }}>

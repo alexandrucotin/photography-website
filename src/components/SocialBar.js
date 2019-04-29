@@ -1,5 +1,9 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 class SocialBar extends React.Component {
   constructor(props) {
@@ -8,18 +12,19 @@ class SocialBar extends React.Component {
 
   render() {
     return (
-      <Grid container direction="row" className="social-bar" spacing={24}>
-        <Grid item>
-          <p>Instagram</p>
+      <Grid container direction="row" className="social-bar">
+        <Grid item className="icon-style">
+          <FontAwesomeIcon icon={faInstagram} className="instagram-hover" />
         </Grid>
-        <Grid item>
-          <p>Facebook</p>
+        <Grid item className="icon-style">
+          <FontAwesomeIcon icon={faYoutube} className="youtube-hover" />
         </Grid>
-        <Grid item>
-          <p>Youtube</p>
+        <Grid item className="icon-style">
+          <FontAwesomeIcon icon={faFacebookSquare} className="facebook-hover" />
         </Grid>
       </Grid>
     );
   }
 }
+
 export default SocialBar;

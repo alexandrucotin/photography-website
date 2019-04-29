@@ -48,9 +48,9 @@ class Home extends React.Component {
                 <Grid item>
                   <h1 className="title-home">ALEXANDRU COTIN</h1>
                 </Grid>
-                <Grid item style={{ paddingBottom: "2em" }}>
+                <Grid item style={{ paddingBottom: "2rem" }}>
                   <Button variant="contained">
-                    Send
+                    Email
                     <Icon>send</Icon>
                   </Button>
                 </Grid>
