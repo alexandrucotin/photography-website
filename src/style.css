@@ -96,26 +96,33 @@ html {
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  width: auto;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-.divide {
-  padding: 1em 3em 1em 3em;
+.center-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .div-title-me {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
+  justify-content: center;
 }
 
 .responsive-me {
   width: 100%;
   height: auto;
-  max-width: 20em;
+  max-width: 50%;
   border-radius: 50%;
+}
+
+.center-text-me {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-me {

@@ -28,11 +28,9 @@ function BottomAppBar(props) {
   const { classes } = props;
   return (
     <AppBar
-      position="fixed"
       className={classes.appBar}
       align="center"
       style={{
-        alignItems: "center",
         justifyContent: "center",
         background: "black",
         opacity: 0.6

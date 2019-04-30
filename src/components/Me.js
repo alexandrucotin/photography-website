@@ -42,19 +42,42 @@ class Me extends React.Component {
         {this.state.isVisible ? (
           <div className="me">
             <SocialBar />
-            <Grid container className="center-div div-title-me">
-              <Grid item xs={12} sm={12} lg={3} xl={3}>
+            <Grid container className="div-title-me">
+              <Grid
+                item
+                className="center-img"
+                xs={12}
+                sm={6}
+                md={6}
+                lg={6}
+                xl={6}
+              >
                 <img
                   src={image}
                   alt="alex cotin"
-                  className="responsive-me round"
+                  className="responsive-me round "
                 />
               </Grid>
-              <Grid item xs={12} sm={12} lg={3} xl={3}>
-                <Typography component="h2" variant="h1" gutterBottom>
-                  About me
-                </Typography>
-                <Typography variant="body2" gutterBottom>
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={6}
+                lg={4}
+                xl={4}
+                className="center-text-me"
+              >
+                <Typography
+                  style={{ color: "white", fontWeight: 300 }}
+                  gutterBottom
+                >
+                  <Typography
+                    style={{ color: "white", fontWeight: 300 }}
+                    variant="h2"
+                    gutterBottom
+                  >
+                    About me
+                  </Typography>
                   Hi, My name is Alex, and I currently study Computer Science at
                   Verona, with a huge passion for photography, film making and
                   coding obviously. I've practice 2 years in photography &
