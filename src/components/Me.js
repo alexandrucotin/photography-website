@@ -68,8 +68,13 @@ class Me extends React.Component {
                 className="center-text-me"
               >
                 <Typography
-                  style={{ color: "white", fontWeight: 300 }}
+                  style={{
+                    color: "white",
+                    fontWeight: 300,
+                    marginBottom: "7em"
+                  }}
                   gutterBottom
+                  className="text-me"
                 >
                   <Typography
                     style={{ color: "white", fontWeight: 300 }}

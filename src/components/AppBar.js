@@ -40,7 +40,7 @@ function BottomAppBar(props) {
         <Grid item lg={1} xl={1}>
           <BEDots dotNum={"one"} dotNum2={"two"} />
         </Grid>
-        <Grid item xs={3} sm={6} lg={1} xl={1}>
+        <Grid item xs={3} sm={3} lg={1} xl={1}>
           <NavLink to="/" style={{ textDecoration: "none" }}>
             <NavbarIcon icon={"home"} />
           </NavLink>
@@ -54,7 +54,7 @@ function BottomAppBar(props) {
             dotNum5={"seven"}
           />
         </Grid>
-        <Grid item xs={3} sm={6} lg={1} xl={1}>
+        <Grid item xs={3} sm={3} lg={1} xl={1}>
           <NavLink to="/Me" style={{ textDecoration: "none" }}>
             <NavbarIcon icon={"face"} />
           </NavLink>
@@ -68,7 +68,7 @@ function BottomAppBar(props) {
             dotNum5={"twelve"}
           />
         </Grid>
-        <Grid item xs={3} sm={6} lg={1} xl={1}>
+        <Grid item xs={3} sm={3} lg={1} xl={1}>
           <NavLink to="/Portfolio" style={{ textDecoration: "none" }}>
             <NavbarIcon icon={"photo_camera"} />
           </NavLink>
@@ -82,7 +82,7 @@ function BottomAppBar(props) {
             dotNum5={"seventeen"}
           />
         </Grid>
-        <Grid item xs={3} sm={6} lg={1} xl={1}>
+        <Grid item xs={3} sm={3} lg={1} xl={1}>
           <NavLink to="/Blog" style={{ textDecoration: "none" }}>
             <NavbarIcon icon={"format_align_justify"} />
           </NavLink>
