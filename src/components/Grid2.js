@@ -33,23 +33,21 @@ class GridPort2 extends React.Component {
 
   render() {
     return (
-      <div>
-        <Grid container direction="row">
-          {this.state.images.map(img => (
-            <Grid
-              item
-              key={img.id}
-              xl={4}
-              lg={4}
-              sm={6}
-              xs={12}
-              style={{ padding: ".3rem" }}
-            >
-              <img src={img.url} alt={img.description} className="responsive" />
-            </Grid>
-          ))}
-        </Grid>
-      </div>
+      <Grid container direction="row">
+        {this.state.images.map(img => (
+          <Grid
+            item
+            key={img.id}
+            xl={4}
+            lg={4}
+            sm={6}
+            xs={12}
+            style={{ padding: ".3rem" }}
+          >
+            <img src={img.url} alt={img.description} className="responsive" />
+          </Grid>
+        ))}
+      </Grid>
     );
   }
 }

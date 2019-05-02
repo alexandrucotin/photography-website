@@ -145,6 +145,8 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
 }
 
 /* made images in portfolio responsive */
@@ -166,12 +168,9 @@ html {
   flex-direction: column;
 }
 
-.title-portfolio {
-  color: white;
-  text-transform: uppercase;
-  font-size: 6em;
-  font-family: "Lato";
-  font-weight: 100;
+.center-card-portfolio {
+  display: flex;
+  justify-content: center;
 }
 
 /* END STYLE PORTFOLIO PAGE */

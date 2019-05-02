@@ -40,20 +40,7 @@ class Portfolio extends React.Component {
       >
         {this.state.isVisible ? (
           <div className="portfolio">
-            <Grid container>
-              <Grid item lg={6}>
-                <Category />
-              </Grid>
-              <Grid item lg={6}>
-                <Category />
-              </Grid>
-              <Grid item lg={6}>
-                <Category />
-              </Grid>
-              <Grid item lg={6}>
-                <Category />
-              </Grid>
-            </Grid>
+            <Category />
             <BottomAppBar />
           </div>
         ) : null}
