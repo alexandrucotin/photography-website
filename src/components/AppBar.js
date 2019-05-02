@@ -19,8 +19,7 @@ const styles = {
   appBar: {
     top: "auto",
     bottom: 0,
-    height: "6rem",
-    boxShadow: "10px -9px 5px 0px  rgba(0, 0, 0, .1)"
+    height: "6rem"
   }
 };
 

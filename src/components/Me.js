@@ -51,6 +51,7 @@ class Me extends React.Component {
                 md={6}
                 lg={6}
                 xl={6}
+                style={{ padding: "1em" }}
               >
                 <img
                   src={image}
@@ -66,16 +67,9 @@ class Me extends React.Component {
                 lg={4}
                 xl={4}
                 className="center-text-me"
+                style={{ padding: "1em" }}
               >
-                <Typography
-                  style={{
-                    color: "white",
-                    fontWeight: 300,
-                    marginBottom: "7em"
-                  }}
-                  gutterBottom
-                  className="text-me"
-                >
+                <Grid container>
                   <Typography
                     style={{ color: "white", fontWeight: 300 }}
                     variant="h2"
@@ -83,18 +77,27 @@ class Me extends React.Component {
                   >
                     About me
                   </Typography>
-                  Hi, My name is Alex, and I currently study Computer Science at
-                  Verona, with a huge passion for photography, film making and
-                  coding obviously. I've practice 2 years in photography &
-                  filmaking field doing video and photo shooting as for writing
-                  code, I started when I was 16 years old. I've lived in Verona
-                  for the past 13 years and had time to discover the most
-                  interesting places to see and the best places to eat and
-                  drink. Even if you are not comfortable in front of the camera
-                  there is no problem because I like to capture things in the
-                  most natural way. I can speak fluently English, Italian and
-                  Romanian. So communication shouldn't be a problem. :)
-                </Typography>
+                  <Typography
+                    style={{
+                      color: "white",
+                      fontWeight: 300
+                    }}
+                    gutterBottom
+                  >
+                    Hi, My name is Alex, and I currently study Computer Science
+                    at Verona, with a huge passion for photography, film making
+                    and coding obviously. I ve practice 2 years in photography &
+                    filmaking field doing video and photo shooting as for
+                    writing code, I started when I was 16 years old. I ve lived
+                    in Verona for the past 13 years and had time to discover the
+                    most interesting places to see and the best places to eat
+                    and drink. Even if you are not comfortable in front of the
+                    camera there is no problem because I like to capture things
+                    in the most natural way. I can speak fluently English,
+                    Italian and Romanian. So communication shouldn t be a
+                    problem. :)
+                  </Typography>
+                </Grid>
               </Grid>
             </Grid>
             <BottomAppBar />
