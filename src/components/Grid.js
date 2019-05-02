@@ -11,7 +11,8 @@ class GridPort extends React.Component {
     super(props);
 
     this.state = {
-      images: []
+      images: [],
+      category: this.props.category
     };
   }
 

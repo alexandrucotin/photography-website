@@ -2,7 +2,6 @@ import React from "react";
 import BottomAppBar from "./AppBar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Category from "./Categories";
-import Grid from "@material-ui/core/Grid";
 
 class Portfolio extends React.Component {
   constructor(props) {

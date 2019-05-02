@@ -1,13 +1,28 @@
 import React from "react";
 import firebase from "../db/Firebase";
 import { Grid } from "@material-ui/core";
+import BottomAppBar from "./AppBar";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 class GridPort2 extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      images: []
+      images: [],
+      isVisible: true
+    };
+
+    this.closeComponent = ev => {
+      ev.preventDefault();
+
+      this.setState({
+        isVisible: false
+      });
+
+      setTimeout(() => {
+        this.props.history.push("/");
+      }, 600);
     };
   }
 
@@ -33,21 +48,42 @@ class GridPort2 extends React.Component {
 
   render() {
     return (
-      <Grid container direction="row">
-        {this.state.images.map(img => (
-          <Grid
-            item
-            key={img.id}
-            xl={4}
-            lg={4}
-            sm={6}
-            xs={12}
-            style={{ padding: ".3rem" }}
-          >
-            <img src={img.url} alt={img.description} className="responsive" />
-          </Grid>
-        ))}
-      </Grid>
+      <ReactCSSTransitionGroup
+        transitionAppear={true}
+        transitionAppearTimeout={600}
+        transitionEnterTimeout={600}
+        transitionLeaveTimeout={200}
+        transitionName={
+          this.props.match.params === "/login"
+            ? "loadComponent"
+            : "leaveComponent"
+        }
+      >
+        {this.state.isVisible ? (
+          <div className="portfolio">
+            <Grid container direction="row">
+              {this.state.images.map(img => (
+                <Grid
+                  item
+                  key={img.id}
+                  xl={4}
+                  lg={4}
+                  sm={6}
+                  xs={12}
+                  style={{ padding: ".3rem" }}
+                >
+                  <img
+                    src={img.url}
+                    alt={img.description}
+                    className="responsive"
+                  />
+                </Grid>
+              ))}
+            </Grid>
+            <BottomAppBar />
+          </div>
+        ) : null}
+      </ReactCSSTransitionGroup>
     );
   }
 }
