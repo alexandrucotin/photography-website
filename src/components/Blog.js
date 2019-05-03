@@ -1,7 +1,7 @@
 import React from "react";
 import BottomAppBar from "./AppBar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
-import Icon from "@material-ui/core/Icon";
+import Post from "./Post";
 
 class Blog extends React.Component {
   constructor(props) {
@@ -39,15 +39,9 @@ class Blog extends React.Component {
         {this.state.isVisible ? (
           <div className="blog">
             <div className="div-title-blog">
-              <h1 className="title-blog">This my Blog!</h1>
-              <Icon
-                style={{
-                  color: "white",
-                  fontSize: "3em"
-                }}
-              >
-                keyboard_arrow_down
-              </Icon>
+              <Post />
+              <Post />
+              <Post />
             </div>
             <BottomAppBar />
           </div>

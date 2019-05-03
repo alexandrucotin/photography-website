@@ -28,7 +28,8 @@ class Category extends React.Component {
           title: categories[category].title,
           url: categories[category].img,
           description: categories[category].description,
-          id: categories[category].id
+          id: categories[category].id,
+          category: categories[category].category
         });
       }
       this.setState({
@@ -68,7 +69,7 @@ class Category extends React.Component {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Showmore />
+                <Showmore category={category.category} />
               </CardActions>
             </Card>
           </Grid>

@@ -53,11 +53,7 @@ class Me extends React.Component {
                 xl={6}
                 style={{ padding: "1em" }}
               >
-                <img
-                  src={image}
-                  alt="alex cotin"
-                  className="responsive-me round "
-                />
+                <img src={image} alt="alex cotin" className="responsive-me" />
               </Grid>
               <Grid
                 item
