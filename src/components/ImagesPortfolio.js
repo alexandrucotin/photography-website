@@ -1,20 +1,17 @@
 import React from "react";
 import firebase from "../db/Firebase";
 import { Grid } from "@material-ui/core";
-import BottomAppBar from "./AppBar";
+import Navbar from "./Navbar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
-class GridPort2 extends React.Component {
+class ImagesPortfolio extends React.Component {
   constructor(props) {
     super(props);
 
-    console.log(this.props.category);
     this.state = {
       images: [],
-      isVisible: true,
-      category: this.props.category
+      isVisible: true
     };
-
     this.closeComponent = ev => {
       ev.preventDefault();
 
@@ -30,11 +27,12 @@ class GridPort2 extends React.Component {
 
   componentDidMount() {
     const imgRef = firebase.database().ref("imgs");
+    const { category } = this.props.location.state;
     imgRef.on("value", snapshot => {
       let imgs = snapshot.val();
       let newState = [];
       for (let img in imgs) {
-        if (imgs[img].category === this.state.category) {
+        if (imgs[img].category === category) {
           newState.push({
             id: imgs[img].id,
             url: imgs[img].url,
@@ -84,7 +82,7 @@ class GridPort2 extends React.Component {
                 </Grid>
               ))}
             </Grid>
-            <BottomAppBar />
+            <Navbar />
           </div>
         ) : null}
       </ReactCSSTransitionGroup>
@@ -92,4 +90,4 @@ class GridPort2 extends React.Component {
   }
 }
 
-export default GridPort2;
+export default ImagesPortfolio;

@@ -1,5 +1,5 @@
 import React from "react";
-import BottomAppBar from "./AppBar";
+import Navbar from "./Navbar";
 import Grid from "@material-ui/core/Grid";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import image from "../static/me.jpg";
@@ -96,7 +96,7 @@ class Me extends React.Component {
                 </Grid>
               </Grid>
             </Grid>
-            <BottomAppBar />
+            <Navbar />
           </div>
         ) : null}
       </ReactCSSTransitionGroup>

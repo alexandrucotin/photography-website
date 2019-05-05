@@ -1,9 +1,9 @@
 import React from "react";
-import BottomAppBar from "./AppBar";
+import Navbar from "./Navbar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Post from "./Post";
 
-class Blog extends React.Component {
+class BlogPage extends React.Component {
   constructor(props) {
     super(props);
 
@@ -43,7 +43,7 @@ class Blog extends React.Component {
               <Post />
               <Post />
             </div>
-            <BottomAppBar />
+            <Navbar />
           </div>
         ) : null}
       </ReactCSSTransitionGroup>
@@ -51,4 +51,4 @@ class Blog extends React.Component {
   }
 }
 
-export default Blog;
+export default BlogPage;

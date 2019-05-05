@@ -1,9 +1,9 @@
 import React from "react";
-import Me from "./Me";
-import Portfolio from "./Portfolio";
-import Blog from "./Blog";
-import Home from "./Home";
-import Grid2 from "./Grid2";
+import MePage from "./MePage";
+import PortfolioPage from "./PortfolioPage";
+import BlogPage from "./BlogPage";
+import HomePage from "./HomePage";
+import ImagesPortfolio from "./ImagesPortfolio";
 import { Route, Switch } from "react-router-dom";
 
 class App extends React.Component {
@@ -15,11 +15,11 @@ class App extends React.Component {
     return (
       <div>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/me" component={Me} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/blog" component={Blog} />
-          <Route path="/grid" component={Grid2} />
+          <Route exact path="/" component={HomePage} />
+          <Route path="/me" component={MePage} />
+          <Route path="/portfolio/:category" component={ImagesPortfolio} />
+          <Route path="/portfolio" component={PortfolioPage} />
+          <Route path="/blog" component={BlogPage} />
         </Switch>
       </div>
     );

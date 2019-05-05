@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import React from "react";
 
-class Dots extends React.Component {
+class NavbarDots extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -18,4 +18,4 @@ class Dots extends React.Component {
     );
   }
 }
-export default Dots;
+export default NavbarDots;

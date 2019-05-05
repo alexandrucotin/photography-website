@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 
-class Category extends React.Component {
+class CategoriesPortfolio extends React.Component {
   constructor(props) {
     super(props);
 
@@ -76,8 +76,12 @@ class Category extends React.Component {
                   <BottomNavigationAction
                     component={Link}
                     style={{ textDecoration: "none" }}
-                    category={category.category.toString()}
-                    to="/grid"
+                    to={{
+                      pathname: "/portfolio/" + category.category,
+                      state: {
+                        category: category.category
+                      }
+                    }}
                     label="View Photos"
                     icon={<PhotoIcon />}
                   />
@@ -91,4 +95,4 @@ class Category extends React.Component {
   }
 }
 
-export default Category;
+export default CategoriesPortfolio;

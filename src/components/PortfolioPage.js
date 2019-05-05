@@ -1,10 +1,10 @@
 import React from "react";
-import BottomAppBar from "./AppBar";
+import Navbar from "./Navbar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
-import Category from "./Categories";
+import CategoriesPortfolio from "./CategoriesPortfolio";
 import SocialBar from "./SocialBar";
 
-class Portfolio extends React.Component {
+class PortfolioPage extends React.Component {
   constructor(props) {
     super(props);
 
@@ -41,8 +41,8 @@ class Portfolio extends React.Component {
         {this.state.isVisible ? (
           <div className="portfolio">
             <SocialBar />
-            <Category />
-            <BottomAppBar />
+            <CategoriesPortfolio />
+            <Navbar />
           </div>
         ) : null}
       </ReactCSSTransitionGroup>
@@ -50,4 +50,4 @@ class Portfolio extends React.Component {
   }
 }
 
-export default Portfolio;
+export default PortfolioPage;

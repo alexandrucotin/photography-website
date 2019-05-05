@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import AppBar from "@material-ui/core/AppBar";
-import Dots from "./Dots";
+import NavbarDots from "./NavbarDots";
 import BEDots from "./BEDots";
 import NavbarIcon from "./NavbarIcons";
 import { NavLink } from "react-router-dom";
@@ -23,7 +23,7 @@ const styles = {
   }
 };
 
-function BottomAppBar(props) {
+function Navbar(props) {
   const { classes } = props;
   return (
     <AppBar
@@ -45,7 +45,7 @@ function BottomAppBar(props) {
           </NavLink>
         </Grid>
         <Grid item lg={2} xl={2}>
-          <Dots
+          <NavbarDots
             dotNum={"three"}
             dotNum2={"four"}
             dotNum3={"five"}
@@ -59,7 +59,7 @@ function BottomAppBar(props) {
           </NavLink>
         </Grid>
         <Grid item lg={2} xl={2}>
-          <Dots
+          <NavbarDots
             dotNum={"eight"}
             dotNum2={"nine"}
             dotNum3={"ten"}
@@ -73,7 +73,7 @@ function BottomAppBar(props) {
           </NavLink>
         </Grid>
         <Grid item lg={2} xl={2}>
-          <Dots
+          <NavbarDots
             dotNum={"thirteen"}
             dotNum2={"fourteen"}
             dotNum3={"fiveteen"}
@@ -94,8 +94,8 @@ function BottomAppBar(props) {
   );
 }
 
-BottomAppBar.propTypes = {
+Navbar.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(BottomAppBar);
+export default withStyles(styles)(Navbar);

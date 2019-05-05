@@ -1,5 +1,5 @@
 import React from "react";
-import BottomAppBar from "./AppBar";
+import Navbar from "./Navbar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Icon from "@material-ui/core/Icon";
 import Button from "@material-ui/core/Button";
@@ -35,8 +35,7 @@ class Home extends React.Component {
     const { loading } = this.state.isLoding;
 
     if (loading) {
-      // if your component doesn't have to wait for an async action, remove this block
-      return null; // render null when app is not ready
+      return null;
     }
     return (
       <ReactCSSTransitionGroup
@@ -67,7 +66,7 @@ class Home extends React.Component {
                 </Grid>
               </Grid>
             </div>
-            <BottomAppBar />
+            <Navbar />
           </div>
         ) : null}
       </ReactCSSTransitionGroup>
