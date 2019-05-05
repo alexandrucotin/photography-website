@@ -49,6 +49,7 @@ class ImagesPortfolio extends React.Component {
   }
 
   render() {
+    const { category } = this.props.location.state;
     return (
       <ReactCSSTransitionGroup
         transitionAppear={true}
@@ -62,7 +63,7 @@ class ImagesPortfolio extends React.Component {
         }
       >
         {this.state.isVisible ? (
-          <div className="portfolio">
+          <div className={category}>
             <Grid container direction="row">
               {this.state.images.map(img => (
                 <Grid

@@ -145,6 +145,27 @@ html {
   background-size: cover;
   padding-bottom: 6em;
   padding-top: 3em;
+  background-attachment: fixed;
+}
+
+.nature {
+  background-image: url(./static/backgroundGrid.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 6em;
+  padding-top: 3em;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.night {
+  background-image: url(./static/P1060024-12.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 6em;
+  padding-top: 3em;
   height: 100%;
   background-attachment: fixed;
 }
@@ -217,13 +238,20 @@ html {
 
 @media only screen and (max-height: 770px) {
   .me {
-    padding-bottom: 6em;
-    padding-top: 3 rem;
+    padding-bottom: 8em;
+    padding-top: 4em;
   }
 }
 
 @media only screen and (max-width: 479px) {
   .center-card-portfolio {
     max-width: 20em;
+  }
+}
+
+@media only screen and (max-height: 770px) {
+  .portfolio {
+    padding-bottom: 8em;
+    padding-top: 4em;
   }
 }
