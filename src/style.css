@@ -140,13 +140,9 @@ html {
 /* background image */
 .portfolio {
   background-image: url(./static/P1050390.jpg);
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
 }
 
 /* made images in portfolio responsive */
@@ -224,5 +220,12 @@ html {
 @media only screen and (max-width: 479px) {
   .title-home {
     font-size: 2em;
+  }
+}
+
+@media only screen and (max-height: 770px) {
+  .me {
+    padding-bottom: 6em;
+    padding-top: 3 rem;
   }
 }
