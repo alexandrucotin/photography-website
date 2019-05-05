@@ -8,9 +8,11 @@ class GridPort2 extends React.Component {
   constructor(props) {
     super(props);
 
+    console.log(this.props.category);
     this.state = {
       images: [],
-      isVisible: true
+      isVisible: true,
+      category: this.props.category
     };
 
     this.closeComponent = ev => {
@@ -32,13 +34,15 @@ class GridPort2 extends React.Component {
       let imgs = snapshot.val();
       let newState = [];
       for (let img in imgs) {
-        newState.push({
-          id: imgs[img].id,
-          url: imgs[img].url,
-          category: imgs[img].category,
-          description: imgs[img].description,
-          title: imgs[img].title
-        });
+        if (imgs[img].category === this.state.category) {
+          newState.push({
+            id: imgs[img].id,
+            url: imgs[img].url,
+            category: imgs[img].category,
+            description: imgs[img].description,
+            title: imgs[img].title
+          });
+        }
       }
       this.setState({
         images: newState

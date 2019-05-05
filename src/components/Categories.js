@@ -7,7 +7,10 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import firebase from "../db/Firebase";
-import Showmore from "./Showmore";
+import PhotoIcon from "@material-ui/icons/Photo";
+import { Link } from "react-router-dom";
+import BottomNavigation from "@material-ui/core/BottomNavigation";
+import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 
 class Category extends React.Component {
   constructor(props) {
@@ -69,7 +72,16 @@ class Category extends React.Component {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Showmore category={category.category} />
+                <BottomNavigation showLabels style={{ width: 500 }}>
+                  <BottomNavigationAction
+                    component={Link}
+                    style={{ textDecoration: "none" }}
+                    category={category.category.toString()}
+                    to="/grid"
+                    label="View Photos"
+                    icon={<PhotoIcon />}
+                  />
+                </BottomNavigation>
               </CardActions>
             </Card>
           </Grid>

@@ -2,6 +2,7 @@ import React from "react";
 import BottomAppBar from "./AppBar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Category from "./Categories";
+import SocialBar from "./SocialBar";
 
 class Portfolio extends React.Component {
   constructor(props) {
@@ -39,6 +40,7 @@ class Portfolio extends React.Component {
       >
         {this.state.isVisible ? (
           <div className="portfolio">
+            <SocialBar />
             <Category />
             <BottomAppBar />
           </div>
