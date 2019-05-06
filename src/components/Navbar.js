@@ -31,8 +31,7 @@ function Navbar(props) {
       align="center"
       style={{
         justifyContent: "center",
-        background: "black",
-        opacity: 0.6
+        background: "rgba(0,0,0,0.5)"
       }}
     >
       <Grid container direction="row" alignContent="center">

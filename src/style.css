@@ -249,6 +249,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 315px) {
+  .div-title-me {
+    height: 100%;
+  }
+}
+
 @media only screen and (max-height: 770px) {
   .portfolio {
     padding-bottom: 8em;
