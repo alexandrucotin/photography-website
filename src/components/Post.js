@@ -9,7 +9,7 @@ class Blog extends React.Component {
   }
   render() {
     return (
-      <Grid container className="div-title-me" direction="row">
+      <Grid container className="div-title-blog" direction="row">
         <Grid
           item
           className="center-img"

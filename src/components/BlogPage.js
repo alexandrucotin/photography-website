@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
-import Post from "./Post";
 
 class BlogPage extends React.Component {
   constructor(props) {
@@ -39,9 +38,7 @@ class BlogPage extends React.Component {
         {this.state.isVisible ? (
           <div className="blog">
             <div className="div-title-blog">
-              <Post />
-              <Post />
-              <Post />
+              <p className="no-post">NO POST YET!</p>
             </div>
             <Navbar />
           </div>
