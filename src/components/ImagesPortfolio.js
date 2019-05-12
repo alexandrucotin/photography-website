@@ -1,7 +1,6 @@
 import React from "react";
-import firebase from "../db/Firebase";
-import { Grid } from "@material-ui/core";
 import Navbar from "./Navbar";
+import Carousel from "./Carousel";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 class ImagesPortfolio extends React.Component {
@@ -9,7 +8,6 @@ class ImagesPortfolio extends React.Component {
     super(props);
 
     this.state = {
-      images: [],
       isVisible: true
     };
     this.closeComponent = ev => {
@@ -23,29 +21,6 @@ class ImagesPortfolio extends React.Component {
         this.props.history.push("/");
       }, 600);
     };
-  }
-
-  componentDidMount() {
-    const imgRef = firebase.database().ref("imgs");
-    const { category } = this.props.location.state;
-    imgRef.on("value", snapshot => {
-      let imgs = snapshot.val();
-      let newState = [];
-      for (let img in imgs) {
-        if (imgs[img].category === category) {
-          newState.push({
-            id: imgs[img].id,
-            url: imgs[img].url,
-            category: imgs[img].category,
-            description: imgs[img].description,
-            title: imgs[img].title
-          });
-        }
-      }
-      this.setState({
-        images: newState
-      });
-    });
   }
 
   render() {
@@ -64,25 +39,7 @@ class ImagesPortfolio extends React.Component {
       >
         {this.state.isVisible ? (
           <div className={category}>
-            <Grid container direction="row">
-              {this.state.images.map(img => (
-                <Grid
-                  item
-                  key={img.id}
-                  xl={4}
-                  lg={4}
-                  sm={6}
-                  xs={12}
-                  style={{ padding: ".3rem" }}
-                >
-                  <img
-                    src={img.url}
-                    alt={img.description}
-                    className="responsive"
-                  />
-                </Grid>
-              ))}
-            </Grid>
+            <Carousel />
             <Navbar />
           </div>
         ) : null}
