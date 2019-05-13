@@ -1,9 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
-import Icon from "@material-ui/core/Icon";
-import Button from "@material-ui/core/Button";
-import Grid from "@material-ui/core/Grid";
 import SocialBar from "./SocialBar";
 
 class Home extends React.Component {
@@ -54,17 +51,7 @@ class Home extends React.Component {
             <SocialBar />
 
             <div className="div-title-home">
-              <Grid container direction="column">
-                <Grid item>
-                  <h1 className="title-home">ALEXANDRU COTIN</h1>
-                </Grid>
-                <Grid item style={{ paddingBottom: "2rem" }}>
-                  <Button variant="contained">
-                    Email
-                    <Icon>send</Icon>
-                  </Button>
-                </Grid>
-              </Grid>
+              <h1 className="title-home">ALEXANDRU COTIN</h1>
             </div>
             <Navbar />
           </div>
