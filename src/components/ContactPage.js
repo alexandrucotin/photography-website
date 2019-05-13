@@ -1,11 +1,13 @@
 import React from "react";
-import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import Navbar from "./Navbar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import SocialBar from "./SocialBar";
-
+import Input from "@material-ui/core/Input";
+import InputLabel from "@material-ui/core/InputLabel";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import FormControl from "@material-ui/core/FormControl";
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -50,24 +52,50 @@ class Home extends React.Component {
         }
       >
         {this.state.isVisible ? (
-          <div className="home">
+          <div className="contact-me">
             <SocialBar />
 
-            <div className="div-title-home">
+            <div className="div-title-contact">
               <Grid container direction="column">
-                <div>
-                  <Grid container alignItems="flex-end">
-                    <Grid item>
-                      <AccountCircle />
-                    </Grid>
-                    <Grid item>
-                      <TextField
-                        id="input-with-icon-grid"
-                        label="With a grid"
-                      />
-                    </Grid>
-                  </Grid>
-                </div>
+                <FormControl className="little-form">
+                  <InputLabel htmlFor="input-with-icon-adornment">
+                    Name
+                  </InputLabel>
+                  <Input
+                    id="input-with-icon-adornment"
+                    startAdornment={
+                      <InputAdornment position="start">
+                        <AccountCircle />
+                      </InputAdornment>
+                    }
+                  />
+                </FormControl>
+                <FormControl className="little-form">
+                  <InputLabel htmlFor="input-with-icon-adornment">
+                    Email
+                  </InputLabel>
+                  <Input
+                    id="input-with-icon-adornment"
+                    startAdornment={
+                      <InputAdornment position="start">
+                        <AccountCircle />
+                      </InputAdornment>
+                    }
+                  />
+                </FormControl>
+                <FormControl className="little-form">
+                  <InputLabel htmlFor="input-with-icon-adornment">
+                    Message
+                  </InputLabel>
+                  <Input
+                    id="input-with-icon-adornment"
+                    startAdornment={
+                      <InputAdornment position="start">
+                        <AccountCircle />
+                      </InputAdornment>
+                    }
+                  />
+                </FormControl>
               </Grid>
             </div>
             <Navbar />

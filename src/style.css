@@ -255,6 +255,34 @@ html {
 }
 /* END STYLE BLOG PAGE */
 
+/* STYLE CONTACT ME */
+
+.contact-me {
+  background-image: url(./static/P1050390.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div-title-contact {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2em;
+  -webkit-box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.little-form {
+  padding: 0.8em !important;
+}
+
 /* ------------------------------------------------------------------------------------- */
 
 /* MEDIA QUERY */
