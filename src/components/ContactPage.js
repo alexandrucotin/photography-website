@@ -1,9 +1,9 @@
 import React from "react";
+import TextField from "@material-ui/core/TextField";
+import Grid from "@material-ui/core/Grid";
+import AccountCircle from "@material-ui/icons/AccountCircle";
 import Navbar from "./Navbar";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
-import Icon from "@material-ui/core/Icon";
-import Button from "@material-ui/core/Button";
-import Grid from "@material-ui/core/Grid";
 import SocialBar from "./SocialBar";
 
 class Home extends React.Component {
@@ -55,15 +55,19 @@ class Home extends React.Component {
 
             <div className="div-title-home">
               <Grid container direction="column">
-                <Grid item>
-                  <h1 className="title-home">ALEXANDRU COTIN</h1>
-                </Grid>
-                <Grid item style={{ paddingBottom: "2rem" }}>
-                  <Button variant="contained">
-                    Contact Me
-                    <Icon style={{ marginLeft: 10 }}>send</Icon>
-                  </Button>
-                </Grid>
+                <div>
+                  <Grid container alignItems="flex-end">
+                    <Grid item>
+                      <AccountCircle />
+                    </Grid>
+                    <Grid item>
+                      <TextField
+                        id="input-with-icon-grid"
+                        label="With a grid"
+                      />
+                    </Grid>
+                  </Grid>
+                </div>
               </Grid>
             </div>
             <Navbar />

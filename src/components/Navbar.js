@@ -53,7 +53,7 @@ function Navbar(props) {
           />
         </Grid>
         <Grid item xs={3} sm={3} lg={1} xl={1}>
-          <NavLink to="/Me" style={{ textDecoration: "none" }}>
+          <NavLink to="/about-me" style={{ textDecoration: "none" }}>
             <NavbarIcon icon={"face"} />
           </NavLink>
         </Grid>
@@ -67,7 +67,7 @@ function Navbar(props) {
           />
         </Grid>
         <Grid item xs={3} sm={3} lg={1} xl={1}>
-          <NavLink to="/Portfolio" style={{ textDecoration: "none" }}>
+          <NavLink to="/portfolio" style={{ textDecoration: "none" }}>
             <NavbarIcon icon={"photo_camera"} />
           </NavLink>
         </Grid>
@@ -81,7 +81,7 @@ function Navbar(props) {
           />
         </Grid>
         <Grid item xs={3} sm={3} lg={1} xl={1}>
-          <NavLink to="/Blog" style={{ textDecoration: "none" }}>
+          <NavLink to="/contact-me" style={{ textDecoration: "none" }}>
             <NavbarIcon icon={"format_align_justify"} />
           </NavLink>
         </Grid>
