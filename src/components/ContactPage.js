@@ -8,6 +8,8 @@ import Input from "@material-ui/core/Input";
 import InputLabel from "@material-ui/core/InputLabel";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import FormControl from "@material-ui/core/FormControl";
+import Button from "@material-ui/core/Button";
+
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -56,7 +58,7 @@ class Home extends React.Component {
             <SocialBar />
 
             <div className="div-title-contact">
-              <Grid container direction="column">
+              <Grid container direction="column" className="div-form">
                 <FormControl className="little-form">
                   <InputLabel htmlFor="input-with-icon-adornment">
                     Name
@@ -96,6 +98,10 @@ class Home extends React.Component {
                     }
                   />
                 </FormControl>
+
+                <Button variant="contained" color="primary">
+                  Send
+                </Button>
               </Grid>
             </div>
             <Navbar />

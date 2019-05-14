@@ -258,7 +258,7 @@ html {
 /* STYLE CONTACT ME */
 
 .contact-me {
-  background-image: url(./static/P1050390.jpg);
+  background-color: #3b5998;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -281,6 +281,8 @@ html {
 
 .little-form {
   padding: 0.8em !important;
+  width: 25em !important;
+  height: 5em;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -317,5 +319,12 @@ html {
   .portfolio {
     padding-bottom: 8em;
     padding-top: 4em;
+  }
+}
+
+@media only screen and (max-height: 770px) {
+  .little-form {
+    width: 10em !important;
+    height: auto;
   }
 }
